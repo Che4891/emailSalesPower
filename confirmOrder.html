@@ -1,0 +1,2243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msapplication-navbutton-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="white"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="white"
+    />
+    <meta name="theme-color" content="white" />
+    <title>Sales Power</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        width: 100% !important;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+        line-height: 100%;
+        min-width: 375px;
+      }
+      [style*="“Roboto”"] {
+        font-family: “Roboto”, arial, sans-serif !important;
+      }
+      img {
+        outline: none;
+        text-decoration: none;
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100% !important;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+      table td {
+        border-collapse: collapse;
+      }
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      .header-td {
+        padding-top: 40px;
+      }
+      .ofer-title-td {
+        padding-top: 24px;
+        padding-bottom: 16px;
+      }
+      .ofer-text-td {
+        padding-bottom: 24px;
+      }
+      .ofer-button-td {
+        padding-bottom: 40px;
+      }
+      .title-td {
+        padding-top: 40px;
+        padding-bottom: 20px;
+      }
+      .title-td p {
+        margin-bottom: 5px;
+      }
+      .logo {
+        border-bottom: 1px solid #e6edf5;
+        padding-bottom: 20px;
+      }
+      .logo p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .logo-header {
+        padding-right: 5px;
+      }
+      .ofer-button a {
+        background-color: #293fe6;
+        text-align: center;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+      .product-card-td {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #e6edf5;
+      }
+      .product-card-td table td {
+        vertical-align: top;
+        padding-top: 5px;
+      }
+      .link-wrap,
+      .logo-futer,
+      .small-tablet td {
+        vertical-align: inherit !important;
+      }
+      .border-style {
+        border-bottom: 1px solid #e6edf5;
+      }
+      .list-border {
+        border-top: 1px solid #e6edf5;
+      }
+      .product-card-element p {
+        margin-top: 5px;
+        margin-bottom: 16px;
+      }
+      .small-tablet__element {
+        padding-right: 6px;
+      }
+      .top-style {
+        padding-top: 16px !important;
+      }
+      .payment-card {
+        padding-bottom: 20px;
+      }
+      .payment-card p {
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+      .payment-intro p {
+        margin-top: 5px;
+      }
+      .customer-td table td {
+        vertical-align: top;
+      }
+      .payment-card-td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .border-radius-left {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        color: #003351;
+        font-size: 12px;
+      }
+      .border-radius-right {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        color: #003351;
+        font-size: 12px;
+      }
+      .multiple-payment-td {
+        padding-bottom: 40px;
+      }
+      .multiple-payment-td p {
+        margin-bottom: 3px;
+        margin-top: 3px;
+      }
+      .last-item,
+      .payment-head-td {
+        padding-bottom: 16px;
+      }
+      .payment-card__date p {
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+      .payment-body-td {
+        padding-bottom: 32px;
+      }
+      .payment-head-td__element {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-top: 1px dashed #8fadbf;
+      }
+      .customer-td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .user-padding {
+        padding-bottom: 12px;
+      }
+      .impressum-td {
+        margin-top: 16px;
+        margin-bottom: 24px;
+      }
+      .link-wrap a {
+        text-decoration: none;
+      }
+      .link-wrap {
+        border-left: 1px solid #8fadbf;
+      }
+      .logo-futer {
+        padding-right: 5px;
+      }
+      .footer-text p span,
+      .footer-text ol li,
+      .footer-text ul li,
+      .footer-text ol li span,
+      .footer-text ul li span {
+        color: #8fadbf !important;
+      }
+      @media (max-width: 620px) {
+        .tablet-600 {
+          width: 500px !important;
+        }
+        .tablet-520 {
+          width: 440px !important;
+        }
+        .tablet-400 {
+          width: 320px !important;
+        }
+        .product-title p,
+        .ofer-title p {
+          font-size: 24px !important;
+          line-height: 32px !important;
+        }
+        .payment-head-td__element span {
+          font-size: 14px !important;
+        }
+        .list-border p {
+          font-size: 14px !important;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        .payment-card span {
+          font-size: 12px !important;
+        }
+        .payment-card p {
+          font-size: 14px !important;
+        }
+        .payment-card__date p {
+          font-size: 14px !important;
+        }
+        .payment-head-td__element {
+          padding-bottom: 10px;
+        }
+        .payment-title p,
+        .product-title p,
+        .ofer-title p {
+          font-size: 18px !important;
+          line-height: 29px !important;
+        }
+      }
+      @media (max-width: 520px) {
+        .tablet-600 {
+          width: 400px !important;
+        }
+        .tablet-520 {
+          width: 340px !important;
+        }
+        .tablet-260 {
+          width: 200px;
+        }
+        .product-card-img {
+          display: none;
+        }
+        .logo p {
+          font-size: 12px !important;
+        }
+        .logo span {
+          font-size: 10px !important;
+        }
+        .logo img {
+          width: 100px !important;
+        }
+        .payment-title p,
+        .product-title p,
+        .ofer-title p {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+        .ofer-text p {
+          font-size: 14px !important;
+          line-height: 18px !important;
+        }
+        .ofer-button a {
+          font-size: 12px !important;
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+        .impressum-td p,
+        .customer-td p,
+        .payment-body-td p,
+        .tablet-280 p,
+        .payment-intro p,
+        .product-card-text p {
+          font-size: 14px !important;
+        }
+        .impressum-td span,
+        .customer-td span,
+        .payment-head-td span,
+        .tablet-280 span,
+        .payment-intro span,
+        .product-card-text span {
+          font-size: 12px !important;
+        }
+        .product-card-td {
+          padding-top: 15px;
+          padding-bottom: 20px;
+        }
+        .title-td {
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+        .payment-card-td {
+          padding-bottom: 28px;
+        }
+        .customer-td {
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+        .link-wrap a {
+          font-size: 8px !important;
+          padding-top: 2px;
+        }
+        .link-wrap {
+          border: none;
+        }
+      }
+      @media (max-width: 420px) {
+        .tablet-600 {
+          width: 300px !important;
+        }
+        .tablet-520 {
+          width: 260px !important;
+        }
+        .tablet-400 {
+          width: 260px !important;
+        }
+        .tablet-170 {
+          width: 120px !important;
+        }
+        .tablet-200,
+        .tablet-280,
+        .tablet-260 {
+          width: 100px !important;
+        }
+        .payment-card span .impressum-td span,
+        .customer-td span,
+        .payment-head-td span,
+        .tablet-280 span,
+        .payment-intro span,
+        .product-card-text span,
+        .payment-card span {
+          font-size: 10px !important;
+        }
+        .impressum-td p,
+        .customer-td p,
+        .payment-body-td p,
+        .tablet-280 p,
+        .payment-intro p,
+        .product-card-text p,
+        .list-border p,
+        .payment-card p {
+          font-size: 12px !important;
+        }
+        .ofer-button a {
+          font-size: 10px !important;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        .logo img {
+          width: 50px !important;
+        }
+        .logo p {
+          font-size: 10px !important;
+        }
+      }
+      /* Dark mode */
+      @media (prefers-color-scheme: dark) {
+        .header-td,
+        .ofer-title-td,
+        .ofer-text-td,
+        .ofer-button-td,
+        .product-title-td,
+        .product-card-td,
+        .payment-info-td,
+        .payment-head-td,
+        .payment-card-td,
+        .customer-td,
+        .customer-td,
+        .logo {
+          background-color: #ffffff;
+        }
+        .header-td p,
+        .ofer-title-td p,
+        .ofer-text-td p,
+        .ofer-button-td p,
+        .product-title-td p,
+        .product-card-td p,
+        .product-card-element p,
+        .payment-info-td p,
+        .payment-head-td p,
+        .payment-card-td p,
+        .customer-td p,
+        .customer-td p,
+        .logo p {
+          color: #003351 !important;
+        }
+        .header-td span,
+        .ofer-title-td span,
+        .ofer-text-td span,
+        .ofer-button-td span,
+        .product-title-td span,
+        .product-card-td span,
+        .payment-info-td span,
+        .payment-head-td span,
+        .payment-card-td span,
+        .customer-td span,
+        .logo span {
+          color: #003351 !important;
+        }
+        .logo span,
+        .payment-head-td__element span,
+        .payment-card__date span,
+        .product-card-element span,
+        .payment-card > span {
+          color: #8fadbf !important;
+        }
+        .impressum-td {
+          background-color: #003351;
+        }
+        .impressum-td p {
+          color: #8fadbf !important;
+        }
+        .impressum-td span {
+          color: #8fadbf !important;
+        }
+        .product-card-element p span {
+          color: #003351 !important;
+        }
+      }
+      .footer-text * {
+        color: #8fadbf !important;
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0">
+    <div
+      style="
+        font-size: 0px;
+        font-color: #ffffff;
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        display: none;
+      "
+    ></div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#EBF3F5">
+      <tr>
+        <td>
+          <table
+            class="main tablet-600"
+            cellpadding="0"
+            cellspacing="0"
+            width="600"
+            align="center"
+          >
+            <tr>
+              <td height="30" width="600"></td>
+            </tr>
+            <!-- Logo + order number + date of order-->
+            <tr>
+              <td bgcolor="#ffffff" class="header-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left" class="logo">
+                      <img
+                        src="https://img.salespower.io/logo.png"
+                        alt="logo"
+                      />
+                    </td>
+                    <td bgcolor="#ffffff" align="right" class="logo">
+                      <table
+                        class="tablet-260"
+                        cellpadding="0"
+                        width="290"
+                        cellspacing="0"
+                        align="right"
+                      >
+                        <tr>
+                          <td align="left" class="logo-header">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 14px;
+                              "
+                            >
+                              Bestellnummer
+                            </span>
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                font-weight: 700;
+                              "
+                            >
+                              <%= uid %>
+                            </p>
+                          </td>
+                          <td align="center" class="logo-header">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 14px;
+                              "
+                            >
+                              Bestelldatum
+                            </span>
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                font-weight: 700;
+                              "
+                            >
+                              <%= date %>
+                            </p>
+                          </td>
+                          <td align="right">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 14px;
+                              "
+                            >
+                              Lieferzeit
+                            </span>
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                font-weight: 700;
+                              "
+                            >
+                              Sofort
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- first section + Contacting the client-->
+            <tr>
+              <td bgcolor="#ffffff" class="ofer-title-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left" class="ofer-title">
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 28px;
+                          color: #293fe6;
+                          font-weight: 700;
+                          line-height: 33px;
+                        "
+                      >
+                        Vielen <br />
+                        Dank für Ihre Bestellung
+                      </p>
+                    </td>
+                    <td align="right" class="ofer">
+                      <img src="https://img.salespower.io/giv.png" alt="give" />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <!-- Contacting the client -->
+              <td bgcolor="#ffffff" class="ofer-text-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left" class="ofer-text">
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 16px;
+                          color: #003351;
+                          font-weight: 700;
+                          line-height: 16px;
+                        "
+                      >
+                        <!-- Referencing by gender -->
+                        <span
+                          ><%- greeting === 'MALE' ? 'Sehr geehrter Herr' :
+                          greeting === 'FEMALE' ? 'Sehr geehrte Frau' :
+                          'Hallo'%></span
+                        >
+                        <span>
+                          <%- billingAddress.educational ?
+                          `${billingAddress.educational}` : '' %></span
+                        >
+                        <!-- Referencing by Last Name -->
+                        <span
+                          ><%- greeting === 'OTHER' ?
+                          `${billingAddress.firstName}
+                          ${billingAddress.lastName}` : billingAddress.lastName
+                          %></span
+                        >
+                      </p>
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 16px;
+                          color: #003351;
+                          line-height: 21px;
+                        "
+                      >
+                        Unten finden Sie die Zusammenfassung Ihrer Bestellung.
+                        Bei Fragen zur Bestellung geben Sie bitte immer ihre
+                        Bestellnummer an.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="ofer-button-td" bgcolor="#ffffff">
+                <table
+                  class="btn tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520px"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left" class="ofer-button">
+                      <a
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 16px;
+                          color: #ffffff;
+                        "
+                        href="<%= invoiceUrl %>"
+                        >Rechnung herunterladen</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="30" width="600"></td>
+            </tr>
+            <!-- second section -->
+            <tr>
+              <td bgcolor="#ffffff" class="product-title-td title-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left" class="product-title">
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 28px;
+                          color: #003351;
+                          font-weight: 700;
+                        "
+                      >
+                        Bestellte Produkte
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- PRODUCT START-->
+            <% products.forEach(function(product) { %>
+            <tr>
+              <td bgcolor="#ffffff" class="product-card-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <!-- product info start -->
+                    <td align="right" class="product-card-text">
+                      <!-- name and quantity -->
+                      <table
+                        class="tablet-400"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        align="center"
+                      >
+                        <tr>
+                          <td
+                            align="left"
+                            class="product-card-element border-style"
+                          >
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #c6dfee;
+                                line-height: 14px;
+                              "
+                            >
+                              Name
+                            </span>
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                font-weight: 700;
+                              "
+                            >
+                              <%= product.customerName %>
+                            </p>
+                          </td>
+                          <td
+                            align="right"
+                            class="product-card-element border-style"
+                          >
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 14px;
+                              "
+                            >
+                              Anzahl
+                            </span>
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                font-weight: 700;
+                              "
+                            >
+                              1
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Amount -->
+                      <table
+                        class="tablet-400"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        align="center"
+                      >
+                        <tr>
+                          <td
+                            align="left"
+                            class="product-card-element top-style"
+                          >
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 14px;
+                              "
+                            >
+                              Netto gesamt
+                            </span>
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                              "
+                            >
+                              <%= totalNetPrice %> <span>EUR</span>
+                            </p>
+                          </td>
+                          <% if (vatPercent) { %>
+                          <td
+                            align="center"
+                            class="product-card-element top-style"
+                          >
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 14px;
+                              "
+                            >
+                              UST gesamt (<span><%= vatPercent %>%</span>)
+                            </span>
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                              "
+                            >
+                              <%= totalVatAmount %> <span>EUR</span>
+                            </p>
+                          </td>
+                          <% } %>
+                          <td
+                            align="right"
+                            class="product-card-element top-style"
+                          >
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 14px;
+                              "
+                            >
+                              Brutto gesamt
+                            </span>
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                font-weight: 700;
+                              "
+                            >
+                              <%= totalGrossPrice %> <span>EUR</span>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Description -->
+                      <table
+                        class="tablet-400"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        align="center"
+                      >
+                        <tr>
+                          <td align="left" class="product-card-element">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 14px;
+                              "
+                            >
+                              Beschreibung
+                            </span>
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                line-height: 21px;
+                              "
+                            >
+                              <%- description %>
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Service period  -->
+                      <% if (servicePeriodLength) { %>
+                      <table
+                        class="tablet-400"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                        align="center"
+                      >
+                        <tr>
+                          <td align="left" class="product-card-element">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 14px;
+                              "
+                            >
+                              Dienstleistungszeitraum
+                              <span
+                                >(<%= servicePeriodLength %> <%= servicePeriod
+                                %>)</span
+                              >
+                            </span>
+                            <table
+                              class="tablet-400"
+                              cellpadding="0"
+                              cellspacing="0"
+                              width="400"
+                              align="center"
+                            >
+                              <tr>
+                                <td align="left">
+                                  <table
+                                    class="tablet-170 small-tablet"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="170"
+                                  >
+                                    <tr>
+                                      <td class="small-tablet__element">
+                                        <span
+                                          style="
+                                            font-family: Arial, Helvetica,
+                                              sans-serif, 'Roboto';
+                                            font-size: 16px;
+                                            color: #8fadbf;
+                                          "
+                                          >Von</span
+                                        >
+                                      </td>
+                                      <td class="small-tablet__element">
+                                        <img
+                                          src="https://img.salespower.io/datePicture.png"
+                                          alt="datePicture"
+                                        />
+                                      </td>
+                                      <td>
+                                        <span
+                                          style="
+                                            font-family: Arial, Helvetica,
+                                              sans-serif, 'Roboto';
+                                            font-size: 16px;
+                                            color: #003351;
+                                          "
+                                          ><%= servicePeriodStartDate %></span
+                                        >
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td align="right">
+                                  <table
+                                    class="tablet-170 small-tablet"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="170"
+                                  >
+                                    <tr>
+                                      <td class="small-tablet__element">
+                                        <span
+                                          style="
+                                            font-family: Arial, Helvetica,
+                                              sans-serif, 'Roboto';
+                                            font-size: 16px;
+                                            color: #8fadbf;
+                                          "
+                                          >bis</span
+                                        >
+                                      </td>
+                                      <td class="small-tablet__element">
+                                        <img
+                                          src="https://img.salespower.io/datePicture.png"
+                                          alt="datePicture"
+                                        />
+                                      </td>
+                                      <td>
+                                        <span
+                                          style="
+                                            font-family: Arial, Helvetica,
+                                              sans-serif, 'Roboto';
+                                            font-size: 16px;
+                                            color: #003351;
+                                          "
+                                          ><%= servicePeriodEndDate %></span
+                                        >
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <% } %>
+                    </td>
+                    <!-- product info end -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <% }); %>
+            <!-- PRODUCT END-->
+            <tr>
+              <td height="30" width="600"></td>
+            </tr>
+            <!-- PAYMENT-METHOD -->
+            <tr>
+              <td bgcolor="#ffffff" class="payment-info-td title-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left" class="payment-title">
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 28px;
+                          color: #003351;
+                          font-weight: 700;
+                        "
+                      >
+                        Zahlungsinformationen
+                      </p>
+                    </td>
+                    <td>
+                      <table
+                        class="tablet-200"
+                        cellpadding="0"
+                        width="200"
+                        cellspacing="0"
+                        align="right"
+                      >
+                        <tr>
+                          <td align="right">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 14px;
+                              "
+                              >Bezahlmethode</span
+                            >
+                            <img
+                              class="payment-img"
+                              src="<%- paymentMethod === 'card' ? 'https://img.salespower.io/masterCardFull.png' : 'https://img.salespower.io/sepa.png' %>"
+                              alt="Payment method"
+                            />
+                            <!-- Card number -->
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #003351;
+                                line-height: 14px;
+                              "
+                            >
+                              <%- paymentMethod === 'card' ? `**** **** ****
+                              ${last4}` : `${sepaPrefix} **** **** ****
+                              **${last4}` %>
+                            </span>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- PAYMENT-METHOD END-->
+            <!-- PAYMENT-INFO (total and vat/net ) START -->
+            <tr>
+              <td bgcolor="#ffffff" class="payment-card-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <!-- Net amount -->
+                    <td align="left" class="payment-card">
+                      <span
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 14px;
+                          color: #003351;
+                        "
+                      >
+                        Netto gesamt
+                      </span>
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 20px;
+                          color: #003351;
+                          font-weight: 700;
+                        "
+                      >
+                        <%= totalNetPrice %> <span>EUR</span>
+                      </p>
+                    </td>
+                    <!-- Vat amount -->
+                    <% if (vatPercent) { %>
+                    <td align="center" class="payment-card">
+                      <span
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 14px;
+                          color: #003351;
+                        "
+                      >
+                        UST gesamt (<span><%= vatPercent %>%</span>)
+                      </span>
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 20px;
+                          color: #003351;
+                          font-weight: 700;
+                        "
+                      >
+                        <%= totalVatAmount %> <span>EUR</span>
+                      </p>
+                    </td>
+                    <% } %>
+                    <!-- Amount (gross) -->
+                    <td align="right" class="payment-card">
+                      <span
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 14px;
+                          color: #003351;
+                        "
+                      >
+                        Brutto gesamt
+                      </span>
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 20px;
+                          color: #003351;
+                          font-weight: 700;
+                        "
+                      >
+                        <%= totalGrossPrice %> <span>EUR</span>
+                      </p>
+                    </td>
+                  </tr>
+                  <!-- DATE (block with date only for One time payment) -->
+                  <% if (priceType === 'ONE_TIME') { %>
+                  <tr>
+                    <td class="payment-card__date">
+                      <span
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 12px;
+                          font-weight: 400;
+                          color: #8fadbf;
+                        "
+                      >
+                        Zahlungsdatum
+                      </span>
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 16px;
+                          color: #003351;
+                        "
+                      >
+                        <%= date %>
+                      </p>
+                    </td>
+                  </tr>
+                  <% } %>
+                  <!-- DATE END -->
+                </table>
+              </td>
+            </tr>
+            <!-- PAYMENT-INFO END -->
+            <!-- PAYMENT-INFO (multiple payment ) START  -->
+            <% if (subscribes.length) { %>
+            <tr>
+              <td bgcolor="#ffffff" class="payment-head-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="7"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <thead>
+                    <tr>
+                      <th class="payment-head-td__element" align="center">
+                        <span
+                          style="
+                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #8fadbf;
+                          "
+                          >Nr.</span
+                        >
+                      </th>
+                      <th class="payment-head-td__element" align="center">
+                        <span
+                          style="
+                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #8fadbf;
+                          "
+                        >
+                          Datum
+                        </span>
+                      </th>
+                      <th class="payment-head-td__element" align="center">
+                        <span
+                          style="
+                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #8fadbf;
+                          "
+                          >Netto</span
+                        >
+                      </th>
+                      <th class="payment-head-td__element" align="center">
+                        <span
+                          style="
+                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #8fadbf;
+                          "
+                          >UST (<%= vatPercent %>%)</span
+                        >
+                      </th>
+                      <th class="payment-head-td__element" align="right">
+                        <span
+                          style="
+                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #8fadbf;
+                          "
+                          >Brutto</span
+                        >
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% subscribes.forEach(function(sub, index) { %>
+                    <tr>
+                      <td class="list-border" align="center">
+                        <p
+                          style="
+                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                            font-size: 16px;
+                            color: #003351;
+                          "
+                        >
+                          <%= index + 1 %>
+                        </p>
+                      </td>
+                      <td class="list-border" align="left">
+                        <p
+                          style="
+                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                            font-size: 16px;
+                            color: #003351;
+                          "
+                        >
+                          <%= sub.date %>
+                        </p>
+                      </td>
+                      <td class="list-border" align="right">
+                        <p
+                          style="
+                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                            font-size: 16px;
+                            color: #003351;
+                          "
+                        >
+                          <%= sub.netAmount %> EUR
+                        </p>
+                      </td>
+                      <td class="list-border" align="center">
+                        <p
+                          style="
+                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                            font-size: 16px;
+                            color: #003351;
+                          "
+                        >
+                          <%= sub.vatAmount %> EUR
+                        </p>
+                      </td>
+                      <td class="list-border" align="right">
+                        <p
+                          style="
+                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                            font-size: 16px;
+                            color: #003351;
+                          "
+                        >
+                          <%= sub.grossAmount %> EUR
+                        </p>
+                      </td>
+                    </tr>
+                    <% }); %>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <% } %>
+            <!-- PAYMENT-INFO END -->
+            <tr>
+              <td height="30" width="300"></td>
+            </tr>
+            <!-- CUSTOMER INFORMATION START-->
+            <% if (billingAddress.type === "PRIVATE_PERSON") { %>
+            <tr>
+              <td bgcolor="#ffffff" class="payment-info-td title-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left" class="payment-title">
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 28px;
+                          color: #003351;
+                          font-weight: 700;
+                        "
+                      >
+                        Rechnungsadresse
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- About client -->
+            <tr>
+              <td bgcolor="#ffffff" class="customer-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td width="50">
+                      <img
+                        src="https://img.salespower.io/user.png"
+                        alt="user"
+                      />
+                    </td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td class="user-padding">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                font-weight: 700;
+                              "
+                              >Person</span
+                            >
+                          </td>
+                        </tr>
+                        <% if (billingAddress.educational) { %>
+                        <tr>
+                          <td>
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                              "
+                            >
+                              <%= billingAddress.educational %>
+                            </p>
+                          </td>
+                        </tr>
+                        <% } %>
+                        <tr>
+                          <td>
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                              "
+                              >Vorname</span
+                            ><br />
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                line-height: 20px;
+                              "
+                              ><%= billingAddress.firstName %></span
+                            >
+                          </td>
+                          <td>
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                              "
+                              >Nachname</span
+                            ><br />
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                line-height: 20px;
+                              "
+                              ><%= billingAddress.lastName %></span
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Contact -->
+            <tr>
+              <td bgcolor="#ffffff" class="customer-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td width="50">
+                      <img
+                        src="https://img.salespower.io/folder.png"
+                        alt="user"
+                      />
+                    </td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td class="user-padding">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                font-weight: 700;
+                              "
+                              >Kontakt</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="user-padding">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                              "
+                              >E-Mail</span
+                            ><br />
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                line-height: 20px;
+                              "
+                              ><%= billingAddress.email %></span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="user-padding">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                              "
+                              >Telefon</span
+                            ><br />
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                line-height: 20px;
+                              "
+                              ><%= billingAddress.phone %></span
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Address -->
+            <tr>
+              <td bgcolor="#ffffff" class="customer-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td width="50">
+                      <img
+                        src="https://img.salespower.io/customerloc.png"
+                        alt="user"
+                      />
+                    </td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td class="user-padding">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                font-weight: 700;
+                              "
+                              >Adresse</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="user-padding">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                              "
+                              >Straße</span
+                            ><br />
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                line-height: 20px;
+                              "
+                              ><%= billingAddress.street %> <%=
+                              billingAddress.house %></span
+                            >
+                          </td>
+                        </tr>
+                        <% if (billingAddress.additional) { %>
+                        <tr>
+                          <td class="user-padding">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                              "
+                              >Zusatz</span
+                            ><br />
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                line-height: 20px;
+                              "
+                              ><%= billingAddress.additional %></span
+                            >
+                          </td>
+                        </tr>
+                        <% } %>
+                        <tr>
+                          <td class="last-item">
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                              "
+                              >Stadt</span
+                            ><br />
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 16px;
+                                color: #003351;
+                                line-height: 20px;
+                              "
+                              ><%= billingAddress.zip %> <%= billingAddress.city
+                              %>, <%= billingAddress.country %></span
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- CUSTOMER INFORMATION END-->
+            <% } %> <% if (billingAddress.type === "COMPANY") { %>
+            <!-- CUSTOMER COMPANY INFORMATION START-->
+            <tr>
+              <td bgcolor="#ffffff" class="payment-info-td title-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left" class="payment-title">
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 28px;
+                          color: #003351;
+                          font-weight: 700;
+                        "
+                      >
+                        Rechnungsadresse
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- About Company -->
+            <tr>
+              <td bgcolor="#ffffff" class="customer-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tbody>
+                    <tr>
+                      <td width="50">
+                        <img
+                          src="https://img.salespower.io/cinfo.png"
+                          alt="company"
+                        />
+                      </td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td class="user-padding">
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    font-weight: 700;
+                                  "
+                                  >Firma</span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="user-padding">
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 12px;
+                                    color: #8fadbf;
+                                  "
+                                  >Firma</span
+                                ><br />
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    line-height: 20px;
+                                  "
+                                  ><%= billingAddress.name %></span
+                                >
+                              </td>
+                              <td class="user-padding">
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 12px;
+                                    color: #8fadbf;
+                                  "
+                                  >Land</span
+                                ><br />
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    line-height: 20px;
+                                  "
+                                  ><%= billingAddress.country %></span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <% if (billingAddress.legalForm) { %>
+                              <td width="150">
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 12px;
+                                    color: #8fadbf;
+                                  "
+                                  >Rechtsform</span
+                                ><br />
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    line-height: 20px;
+                                  "
+                                  ><%= billingAddress.legalForm %></span
+                                >
+                              </td>
+                              <% } %> <% if (billingAddress.vat) { %>
+                              <td>
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 12px;
+                                    color: #8fadbf;
+                                  "
+                                  >UST</span
+                                ><br />
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    line-height: 20px;
+                                  "
+                                  ><%= billingAddress.vat %></span
+                                >
+                              </td>
+                              <% } %>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <!-- Company address -->
+            <tr>
+              <td bgcolor="#ffffff" class="customer-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tbody>
+                    <tr>
+                      <td width="50">
+                        <img
+                          src="https://img.salespower.io/customerloc.png"
+                          alt="user"
+                        />
+                      </td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td class="user-padding">
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    font-weight: 700;
+                                  "
+                                  >Firmenadresse</span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="user-padding">
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 12px;
+                                    color: #8fadbf;
+                                  "
+                                  >Straße</span
+                                ><br />
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    line-height: 20px;
+                                  "
+                                  ><%= billingAddress.street %> <%=
+                                  billingAddress.house %></span
+                                >
+                              </td>
+                            </tr>
+                            <% if (billingAddress.additional) { %>
+                            <tr>
+                              <td class="user-padding">
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 12px;
+                                    color: #8fadbf;
+                                  "
+                                  >Zusatz</span
+                                ><br />
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    line-height: 20px;
+                                  "
+                                  ><%= billingAddress.additional %></span
+                                >
+                              </td>
+                            </tr>
+                            <% } %>
+                            <tr>
+                              <td class="last-item">
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 12px;
+                                    color: #8fadbf;
+                                  "
+                                  >Stadt</span
+                                ><br />
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    line-height: 20px;
+                                  "
+                                  ><%= billingAddress.zip %> <%=
+                                  billingAddress.city %>, <%=
+                                  billingAddress.country %></span
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <!-- Contact person -->
+            <tr>
+              <td bgcolor="#ffffff" class="customer-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tbody>
+                    <tr>
+                      <td width="50">
+                        <img
+                          src="https://img.salespower.io/user.png"
+                          alt="user"
+                        />
+                      </td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    font-weight: 700;
+                                  "
+                                  >Kontakt</span
+                                >
+                              </td>
+                            </tr>
+                            <% if (billingAddress.educational) { %>
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                  "
+                                >
+                                  <%= billingAddress.educational %>
+                                </p>
+                              </td>
+                            </tr>
+                            <% } %>
+                            <tr>
+                              <td class="user-padding">
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 12px;
+                                    color: #8fadbf;
+                                  "
+                                  >Vorname</span
+                                ><br />
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    line-height: 20px;
+                                  "
+                                  ><%= billingAddress.firstName %></span
+                                >
+                              </td>
+                              <td>
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 12px;
+                                    color: #8fadbf;
+                                  "
+                                  >Nachname</span
+                                ><br />
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    line-height: 20px;
+                                  "
+                                  ><%= billingAddress.lastName %></span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="user-padding">
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 12px;
+                                    color: #8fadbf;
+                                  "
+                                  >E-Mail</span
+                                ><br />
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    line-height: 20px;
+                                  "
+                                  ><%= billingAddress.email %></span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="user-padding">
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 12px;
+                                    color: #8fadbf;
+                                  "
+                                  >Telefon</span
+                                ><br />
+                                <span
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif,
+                                      'Roboto';
+                                    font-size: 16px;
+                                    color: #003351;
+                                    line-height: 20px;
+                                  "
+                                  ><%= billingAddress.phone %></span
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <!-- CUSTOMER COMPANY INFORMATION END-->
+            <% } %>
+
+            <tr>
+              <td height="30" width="300"></td>
+            </tr>
+            <!-- INFORMATION START-->
+            <tr>
+              <td bgcolor="#003351" class="product-card-td impressum-td">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left">
+                      <span
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 16px;
+                          color: #8fadbf;
+                          font-weight: 700;
+                        "
+                      >
+                        Impressum </span
+                      ><br />
+                      <!-- The text is taken from the Legal agreements from the section Imprint (company information) -->
+                      <div
+                        class="footer-text"
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 14px;
+                          color: #8fadbf;
+                          line-height: 18px;
+                        "
+                        id="imprint"
+                      >
+                        <%- agreements.imprint %>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      <span
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 16px;
+                          color: #8fadbf;
+                          font-weight: 700;
+                        "
+                      >
+                        Allgemeine Geschäftsbedingungen </span
+                      ><br />
+                      <!-- The text is taken from the Legal agreements from the section Terms & Conditions -->
+                      <div
+                        class="footer-text"
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 14px;
+                          color: #8fadbf;
+                          line-height: 18px;
+                        "
+                        id="termsAndConditions"
+                      >
+                        <%- agreements.termsAndConditions %>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <table
+                      class="tablet-520"
+                      cellpadding="0"
+                      cellspacing="0"
+                      width="520"
+                      align="center"
+                    >
+                      <tr>
+                        <td class="logo-futer" align="left">
+                          <a target="blank" href="https://www.salespower.io/"
+                            ><img
+                              src="https://img.salespower.io/footerLogo.png"
+                              alt="logo"
+                          /></a>
+                        </td>
+                        <td class="link-wrap" align="right">
+                          <a
+                            target="blank"
+                            style="
+                              font-family: Arial, Helvetica, sans-serif,
+                                'Roboto';
+                              font-size: 12px;
+                              color: #8fadbf;
+                              line-height: 23px;
+                            "
+                            href="https://www.salespower.io/rechnungsstellung"
+                            >Erfahre mehr über Rechnungsstellung mit
+                            SalesPower</a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- INFORMATION END-->
+            <tr>
+              <td height="30" width="300"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

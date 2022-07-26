@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sales Power</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msapplication-navbutton-color" content="white" />
+    <meta name="color-scheme" content="light only" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="supported-color-schemes" content="light only" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light only)"
+      content="white"
+    />
+    <meta name="theme-color" content="white" />
+    <meta name="prefers-color-scheme" content="light only" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        width: 100% !important;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+        line-height: 100%;
+        min-width: 320px;
+      }
+
+      [style*="Roboto"] {
+        font-family: "Roboto", arial, sans-serif !important;
+      }
+
+      img {
+        outline: none;
+        text-decoration: none;
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100% !important;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+
+      table td {
+        border-collapse: collapse;
+      }
+
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      .content-td {
+        padding-top: 20px;
+        border-top: 1px solid #e6edf5;
+      }
+      .button-td {
+        padding-top: 31px;
+        padding-bottom: 31px;
+      }
+      .btn-td a {
+        background-color: #293fe6;
+        text-align: center;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+      .footer-td {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .fone img {
+        padding-left: 30px;
+        padding-bottom: 30px;
+      }
+      .impressum-td {
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+      .impressum-td table td {
+        vertical-align: top;
+      }
+      .impressum-td p,
+      .impressum-td span {
+        width: 120px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+      .impressum-text {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      @media (max-width: 620px) {
+        .tablet-600 {
+          width: 500px !important;
+        }
+        .tablet-560 {
+          width: 480px !important;
+        }
+        .tablet-520 {
+          width: 440px !important;
+        }
+        .tablet-120 {
+          width: 100px !important;
+        }
+        .impressum-td p,
+        .impressum-td span {
+          width: 100px;
+        }
+      }
+      @media (max-width: 520px) {
+        .tablet-600 {
+          width: 400px !important;
+        }
+        .tablet-560 {
+          width: 380px !important;
+        }
+        .tablet-520 {
+          width: 340px !important;
+        }
+        .tablet-120 {
+          width: 80px !important;
+        }
+        .impressum-td p,
+        .impressum-td span {
+          width: 80px;
+        }
+      }
+      @media (max-width: 420px) {
+        .tablet-600 {
+          width: 300px !important;
+        }
+        .tablet-560 {
+          width: 280px !important;
+        }
+        .tablet-520 {
+          width: 240px !important;
+        }
+        .intro p {
+          font-size: 14px !important;
+        }
+        .text-content p {
+          font-size: 20px !important;
+        }
+        .text-content,
+        .img-content {
+          display: block;
+        }
+        .text-content br {
+          display: none;
+        }
+        .tablet-120 {
+          width: 60px !important;
+        }
+        .impressum-td p {
+          font-size: 10px !important;
+          width: 60px;
+        }
+        .impressum-td span {
+          font-size: 10px !important;
+          width: 60px;
+        }
+      }
+      @media (max-width: 320px) {
+        .tablet-600 {
+          width: 250px !important;
+        }
+        .tablet-560 {
+          width: 220px !important;
+        }
+        .tablet-520 {
+          width: 220px !important;
+        }
+        .tablet-280 {
+          width: 200px !important;
+        }
+        .tablet-120 {
+          width: 50px !important;
+        }
+        .impressum-td p,
+        .impressum-td span {
+          width: 50px;
+        }
+      }
+      /* Dark mode */
+      @media (prefers-color-scheme: dark) {
+        .header-td,
+        .content-td,
+        .text-td,
+        .button-td,
+        .footer-td {
+          background-color: #ffffff !important;
+        }
+      }
+      /* light mode */
+      @media (prefers-color-scheme: light) {
+        .header-td,
+        .content-td,
+        .text-td,
+        .button-td,
+        .footer-td,
+        .impressum-td {
+          background-color: #ffffff !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0">
+    <div
+      style="
+        font-size: 0px;
+        font-color: #ffffff;
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        display: none;
+      "
+    >
+      Sales Power
+    </div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#EBF3F5">
+      <tr>
+        <td>
+          <table
+            class="main tablet-600"
+            cellpadding="0"
+            cellspacing="0"
+            width="600px"
+            align="center"
+          >
+            <tr>
+              <td height="30" width="600px"></td>
+            </tr>
+            <tr>
+              <td class="header-td" bgcolor="#ffffff">
+                <table
+                  class="tablet-560"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="560px"
+                  align="right"
+                >
+                  <tr>
+                    <td align="left" class="logo">
+                      <table cellpadding="0" cellspacing="0" align="left">
+                        <tr>
+                          <td>
+                            <img
+                              src="https://img.salespower.io/logo.png"
+                              alt="logo"
+                            />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td align="right" class="fone">
+                      <table align="right">
+                        <tr>
+                          <td>
+                            <img
+                              src="https://img.salespower.io/fone.png"
+                              alt="fone"
+                            />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="content-td" bgcolor="#ffffff">
+                <table
+                  class="content tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520px"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left" class="text-content">
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 28px;
+                          color: #003351;
+                          font-weight: 700;
+                          line-height: 33px;
+                        "
+                      >
+                        Einladung
+                      </p>
+                    </td>
+                    <td align="center" class="img-content">
+                      <img
+                        src="https://img.salespower.io/partner.png"
+                        alt="partner"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-td" bgcolor="#ffffff">
+                <table
+                  class="intro tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520px"
+                  align="center"
+                >
+                  <tr>
+                    <td class="text intro">
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 16px;
+                          color: #003351;
+                          line-height: 20px;
+                        "
+                      >
+                        Hi Dario,
+                      </p>
+                      <p
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 16px;
+                          color: #003351;
+                          line-height: 20px;
+                        "
+                      >
+                        Du wurdest eingeladen,
+                        <span style="font-weight: 700"
+                          >Seller company name</span
+                        >
+                        in SalesPower beizutreten. Um die Einladung anzunehmen,
+                        klick auf den Button und erstell dir ein Passwort.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="button-td" bgcolor="#ffffff">
+                <table
+                  class="btn tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520px"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left" class="btn-td">
+                      <a
+                        style="
+                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                          font-size: 16px;
+                          color: #ffffff;
+                        "
+                        href="#"
+                        >Einladung annehmen</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="footer-td" bgcolor="#ffffff">
+                <table
+                  class="footer tablet-280"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="280px"
+                  align="left"
+                >
+                  <tr>
+                    <td align="left" class="footer-img">
+                      <img
+                        src="https://img.salespower.io/footer.png"
+                        alt="animation"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="impressum-td" bgcolor="#003351">
+                <table
+                  class="tablet-520"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="520"
+                  align="center"
+                >
+                  <tr>
+                    <td align="left" class="impressum-text">
+                      <table
+                        class="tablet-120"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="120"
+                        align="center"
+                      >
+                        <tr>
+                          <td>
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 14px;
+                                color: #8fadbf;
+                                font-weight: 700;
+                              "
+                            >
+                              Impressum </span
+                            ><br />
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 16px;
+                              "
+                            >
+                              SalesPower GmbH Industriering Ost 66 47906 Kempen
+                              Deutschland
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td align="left" class="impressum-text">
+                      <table
+                        class="tablet-120"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="120"
+                        align="center"
+                      >
+                        <tr>
+                          <td>
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 14px;
+                                color: #8fadbf;
+                                font-weight: 700;
+                              "
+                            >
+                              Telefon: </span
+                            ><br />
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 16px;
+                              "
+                            >
+                              +49 2152 9953009
+                            </p>
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 14px;
+                                color: #8fadbf;
+                                font-weight: 700;
+                              "
+                            >
+                              E-Mail: </span
+                            ><br />
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 16px;
+                              "
+                            >
+                              info@salespower.io
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td align="left" class="impressum-text">
+                      <table
+                        class="tablet-120"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="120"
+                        align="center"
+                      >
+                        <tr>
+                          <td>
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 14px;
+                                color: #8fadbf;
+                                font-weight: 700;
+                              "
+                            >
+                              Vertreten durch: </span
+                            ><br />
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 14px;
+                              "
+                            >
+                              Sergej Dubowik
+                              <br />
+                              <span style="font-size: 10px"
+                                >Geschäftsführer</span
+                              >
+                            </p>
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 16px;
+                              "
+                            >
+                              Dominik Biss
+                              <br />
+                              <span style="font-size: 10px"
+                                >Geschäftsführer</span
+                              >
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td align="left" class="impressum-text">
+                      <table
+                        class="tablet-120"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="120"
+                        align="center"
+                      >
+                        <tr>
+                          <td>
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 14px;
+                                color: #8fadbf;
+                                font-weight: 700;
+                              "
+                            >
+                              Registereintrag: </span
+                            ><br />
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 16px;
+                              "
+                            >
+                              Eintragung im Handelsregister. Amtsgericht Krefeld
+                              Registernummer: HRB16025
+                            </p>
+                            <span
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 14px;
+                                color: #8fadbf;
+                                font-weight: 700;
+                              "
+                            >
+                              Umsatzsteuer: </span
+                            ><br />
+                            <p
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 16px;
+                              "
+                            >
+                              UmsatzsteuerIdentifikationsnummer: DE310355193
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="30" width="600px"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
