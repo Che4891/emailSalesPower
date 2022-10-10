@@ -1,955 +1,659 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="msapplication-navbutton-color" content="white" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
-    <meta name="color-scheme" content="light" />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: light)"
-      content="white"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="white"
-    />
-    <meta name="theme-color" content="white" />
-    <title>Sales Power</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        width: 100% !important;
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-        margin: 0;
-        padding: 0;
-        line-height: 100%;
-        min-width: 375px;
-      }
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="msapplication-navbutton-color" content="white" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+        <meta name="color-scheme" content="light" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="white" />
+        <meta name="theme-color" content="white" />
+        <title>Sales Power</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                width: 100% !important;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                margin: 0;
+                padding: 0;
+                line-height: 100%;
+                min-width: 375px;
+            }
+            [style*="Roboto"] {
+                font-family: "Roboto", arial, sans-serif !important;
+            }
+            img {
+                outline: none;
+                text-decoration: none;
+                border: none;
+                -ms-interpolation-mode: bicubic;
+                max-width: 100% !important;
+                margin: 0;
+                padding: 0;
+                display: block;
+            }
+            table td {
+                border-collapse: collapse;
+            }
+            table {
+                border-collapse: collapse;
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+            }
+            .header-td {
+                padding-top: 40px;
+            }
+            .header-td__element {
+                border-bottom: 1px solid #e6edf5;
+                padding-bottom: 20px;
+            }
+            .last-element__wrap {
+                border-left: 1px solid #e6edf5;
+            }
+            .header-td__element p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .ofer-button a {
+                background-color: #293fe6;
+                text-align: center;
+                padding-left: 24px;
+                padding-right: 24px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-decoration: none;
+                border-radius: 8px;
+            }
+            .invoice-td__card {
+                padding: 22px;
+                border: 1px solid #8fadbf;
+                border-radius: 12px;
+            }
+            .bank-details__text {
+                padding-bottom: 20px;
+            }
+            .invoice-td__element p {
+                margin: 0;
+                margin-bottom: 30px;
+            }
+            .invoice-td__text p {
+                margin: 0;
+            }
+            .invoice-td__intro {
+                padding: 0;
+                padding-top: 8px;
+                padding-bottom: 30px;
+                line-height: 48px;
+            }
+            .ofer-button {
+                padding-bottom: 20px;
+            }
+            .product-card-td {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+            .customer-td table td,
+            .payment-card-td table td {
+                vertical-align: top;
+            }
+            .customer-td__text p {
+                margin: 0;
+                margin-bottom: 5px;
+            }
+            .customer-td__email {
+                padding-bottom: 40px;
+            }
+            .invoice-td,
+            .customer-td {
+                padding-top: 25px;
+                padding-bottom: 20px;
+            }
+            .link-wrap a {
+                text-decoration: none;
+            }
+            .link-wrap {
+                border-left: 1px solid #8fadbf;
+            }
+            .logo-futer {
+                padding-right: 5px;
+            }
+            @media (max-width: 620px) {
+                .tablet-600 {
+                    width: 500px !important;
+                }
+                .tablet-520 {
+                    width: 440px !important;
+                }
+                .bank-details__text span {
+                    line-height: 14px !important;
+                }
+                .bank-details__title p {
+                    font-size: 14px !important;
+                }
+            }
+            @media (max-width: 520px) {
+                .tablet-600 {
+                    width: 400px !important;
+                }
+                .tablet-520 {
+                    width: 340px !important;
+                }
+                .tablet-215 {
+                    width: 150px;
+                }
+                .header-td__element p {
+                    font-size: 12px !important;
+                }
+                .invoice-td__text p {
+                    font-size: 14px !important;
+                }
+                .invoice-td__intro {
+                    font-size: 20px !important;
+                    line-height: 28px !important;
+                    padding-bottom: 20px;
+                }
+                .ofer-button a {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    font-size: 12px !important;
+                }
+                .invoice-td__card {
+                    padding: 12px;
+                }
+                .invoice-td__element p {
+                    margin-bottom: 15px;
+                    font-size: 12px !important;
+                }
+                .invoice-text,
+                .card-number span {
+                    font-size: 10px !important;
+                }
+                .invoice-td__img {
+                    width: 25px;
+                }
+                .card-text p {
+                    font-size: 12px !important;
+                }
+                .customer-td__text p {
+                    font-size: 14px !important;
+                }
+                .customer-td__email {
+                    padding-bottom: 20px;
+                }
+                .invoice-td,
+                .customer-td {
+                    padding-top: 20px;
+                    padding-bottom: 15px;
+                }
+                .link-wrap a {
+                    font-size: 8px !important;
+                    padding-top: 2px;
+                }
+                .link-wrap {
+                    border: none;
+                }
+            }
+            @media (max-width: 420px) {
+                .tablet-600 {
+                    width: 300px !important;
+                }
+                .tablet-520 {
+                    width: 260px !important;
+                }
+                .tablet-215 {
+                    width: 120px !important;
+                }
+                .table-35 {
+                    width: 15px !important;
+                    padding-right: 10px;
+                }
+                .header-td__element p {
+                    font-size: 10px !important;
+                }
+                .header-td__element span {
+                    font-size: 10px !important;
+                }
+                .invoice-td__text p {
+                    font-size: 12px !important;
+                }
+                .invoice-td__intro {
+                    padding-bottom: 10px;
+                }
+                .ofer-button a {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    font-size: 10px !important;
+                }
+                .invoice-td__card {
+                    padding: 8px;
+                }
+                .invoice-td__element p {
+                    margin-bottom: 10px;
+                    font-size: 8px !important;
+                }
+                .invoice-text,
+                .card-number span {
+                    font-size: 8px !important;
+                }
+                .invoice-td__img {
+                    width: 15px;
+                }
+                .card-text p {
+                    font-size: 10px !important;
+                }
+                .customer-td__text p {
+                    font-size: 12px !important;
+                    margin-bottom: 3px;
+                }
+                .customer-td__email {
+                    padding-bottom: 15px;
+                }
+                .bank-details__title p {
+                    font-size: 12px !important;
+                }
+                .bank-details__text span {
+                    font-size: 10px !important;
+                }
+            }
+            /* Dark mode */
+            @media (prefers-color-scheme: dark) {
+                .header-td,
+                .invoice-td,
+                .customer-td {
+                    background-color: #ffffff !important;
+                }
+                .impressum-td {
+                    background-color: #003351 !important ;
+                }
+            }
+        </style>
+    </head>
 
-      [style*="Roboto"] {
-        font-family: "Roboto", arial, sans-serif !important;
-      }
-
-      img {
-        outline: none;
-        text-decoration: none;
-        border: none;
-        -ms-interpolation-mode: bicubic;
-        max-width: 100% !important;
-        margin: 0;
-        padding: 0;
-        display: block;
-      }
-
-      table td {
-        border-collapse: collapse;
-      }
-
-      table {
-        border-collapse: collapse;
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
-      }
-
-      .header-td {
-        padding-top: 40px;
-      }
-
-      .header-td__element {
-        border-bottom: 1px solid #e6edf5;
-        padding-bottom: 20px;
-      }
-
-      .last-element__wrap {
-        border-left: 1px solid #e6edf5;
-      }
-
-      .header-td__element p {
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
-
-      .ofer-button a {
-        background-color: #293fe6;
-        text-align: center;
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-decoration: none;
-        border-radius: 8px;
-      }
-
-      .invoice-td__card {
-        padding: 22px;
-        border: 1px solid #8fadbf;
-        border-radius: 12px;
-      }
-      .bank-details__text {
-        padding-bottom: 20px;
-      }
-
-      .invoice-td__element p {
-        margin: 0;
-        margin-bottom: 30px;
-      }
-
-      .invoice-td__text p {
-        margin: 0;
-      }
-
-      .invoice-td__intro {
-        padding: 0;
-        padding-top: 8px;
-        padding-bottom: 30px;
-        line-height: 48px;
-      }
-
-      .ofer-button {
-        padding-bottom: 20px;
-      }
-
-      .product-card-td {
-        padding-top: 40px;
-        padding-bottom: 40px;
-      }
-
-      .customer-td table td,
-      .payment-card-td table td {
-        vertical-align: top;
-      }
-
-      .customer-td__text p {
-        margin: 0;
-        margin-bottom: 5px;
-      }
-
-      .customer-td__email {
-        padding-bottom: 40px;
-      }
-
-      .invoice-td,
-      .customer-td {
-        padding-top: 25px;
-        padding-bottom: 20px;
-      }
-
-      .link-wrap a {
-        text-decoration: none;
-      }
-
-      .link-wrap {
-        border-left: 1px solid #8fadbf;
-      }
-
-      .logo-futer {
-        padding-right: 5px;
-      }
-
-      @media (max-width: 620px) {
-        .tablet-600 {
-          width: 500px !important;
-        }
-
-        .tablet-520 {
-          width: 440px !important;
-        }
-        .bank-details__text span {
-          line-height: 14px !important;
-        }
-        .bank-details__title p {
-          font-size: 14px !important;
-        }
-      }
-
-      @media (max-width: 520px) {
-        .tablet-600 {
-          width: 400px !important;
-        }
-
-        .tablet-520 {
-          width: 340px !important;
-        }
-
-        .tablet-215 {
-          width: 150px;
-        }
-
-        .header-td__element p {
-          font-size: 12px !important;
-        }
-
-        .invoice-td__text p {
-          font-size: 14px !important;
-        }
-
-        .invoice-td__intro {
-          font-size: 20px !important;
-          line-height: 28px !important;
-          padding-bottom: 20px;
-        }
-
-        .ofer-button a {
-          padding-left: 8px;
-          padding-right: 8px;
-          padding-top: 8px;
-          padding-bottom: 8px;
-          font-size: 12px !important;
-        }
-
-        .invoice-td__card {
-          padding: 12px;
-        }
-
-        .invoice-td__element p {
-          margin-bottom: 15px;
-          font-size: 12px !important;
-        }
-
-        .card-number span {
-          font-size: 10px !important;
-        }
-
-        .invoice-td__img {
-          width: 25px;
-        }
-
-        .card-text p {
-          font-size: 12px !important;
-        }
-
-        .customer-td__text p {
-          font-size: 14px !important;
-        }
-
-        .customer-td__email {
-          padding-bottom: 20px;
-        }
-
-        .invoice-td,
-        .customer-td {
-          padding-top: 20px;
-          padding-bottom: 15px;
-        }
-
-        .link-wrap a {
-          font-size: 10px !important;
-          padding-top: 2px;
-        }
-
-        .link-wrap {
-          border: none;
-        }
-      }
-
-      @media (max-width: 420px) {
-        .tablet-600 {
-          width: 300px !important;
-        }
-
-        .tablet-520 {
-          width: 260px !important;
-        }
-
-        .tablet-215 {
-          width: 120px !important;
-        }
-
-        .table-35 {
-          width: 15px !important;
-          padding-right: 10px;
-        }
-
-        .header-td__element p {
-          font-size: 10px !important;
-        }
-
-        .header-td__element span {
-          font-size: 10px !important;
-        }
-
-        .invoice-td__text p {
-          font-size: 12px !important;
-        }
-
-        .invoice-td__intro {
-          padding-bottom: 10px;
-        }
-
-        .ofer-button a {
-          padding-left: 5px;
-          padding-right: 5px;
-          padding-top: 6px;
-          padding-bottom: 6px;
-          font-size: 10px !important;
-        }
-
-        .invoice-td__card {
-          padding: 8px;
-        }
-
-        .invoice-td__element p {
-          margin-bottom: 10px;
-          font-size: 8px !important;
-        }
-
-        .card-number span {
-          font-size: 8px !important;
-        }
-
-        .invoice-td__img {
-          width: 15px;
-        }
-
-        .card-text p {
-          font-size: 10px !important;
-        }
-
-        .customer-td__text p {
-          font-size: 12px !important;
-          margin-bottom: 3px;
-        }
-
-        .customer-td__email {
-          padding-bottom: 15px;
-        }
-        .bank-details__title p {
-          font-size: 12px !important;
-        }
-        .bank-details__text span {
-          font-size: 10px !important;
-        }
-      }
-
-      /* Dark mode */
-      @media (prefers-color-scheme: dark) {
-        .header-td,
-        .invoice-td,
-        .customer-td {
-          background-color: #ffffff !important;
-        }
-        .impressum-td {
-          background-color: #003351 !important ;
-        }
-      }
-    </style>
-  </head>
-
-  <body style="margin: 0; padding: 0">
-    <div
-      style="
-        font-size: 0px;
-        color: #ffffff;
-        opacity: 0;
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        display: none;
-      "
-    ></div>
-    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#EBF3F5">
-      <tr>
-        <td>
-          <table
-            class="main tablet-600"
-            cellpadding="0"
-            cellspacing="0"
-            width="600"
-            align="center"
-          >
+    <body style="margin: 0; padding: 0">
+        <div
+            style="font-size: 0px; color: #ffffff; opacity: 0; visibility: hidden; width: 0; height: 0; display: none"
+        ></div>
+        <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#EBF3F5">
             <tr>
-              <td height="30" width="600"></td>
-            </tr>
-            <!-- HEADER  (Invoice; from company; Related invoice)-->
-            <tr>
-              <td bgcolor="#ffffff" class="header-td">
-                <table
-                  class="tablet-520"
-                  cellpadding="0"
-                  cellspacing="0"
-                  width="520"
-                  align="center"
-                >
-                  <tr>
-                    <!-- Invoice -->
-                    <td align="left" class="header-td__element">
-                      <span
-                        style="
-                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
-                          font-size: 12px;
-                          color: #8fadbf;
-                          line-height: 14px;
-                        "
-                        >Rechnung</span
-                      >
-                      <p
-                        style="
-                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
-                          font-size: 16px;
-                          color: #003351;
-                          font-weight: 700;
-                        "
-                      >
-                        #DK-2002-07
-                      </p>
-                    </td>
-                    <!-- Invoice end-->
-                    <!-- From company -->
-                    <td align="left" class="header-td__element">
-                      <span
-                        style="
-                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
-                          font-size: 12px;
-                          color: #8fadbf;
-                          line-height: 14px;
-                        "
-                        >von</span
-                      >
-                      <p
-                        style="
-                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
-                          font-size: 16px;
-                          color: #003351;
-                          font-weight: 700;
-                        "
-                      >
-                        Reebok Ltd. International
-                      </p>
-                    </td>
-                    <!-- From company end-->
-                    <td align="right" class="header-td__element last-element">
-                      <div class="last-element__wrap">
-                        <span
-                          style="
-                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
-                            font-size: 12px;
-                            color: #8fadbf;
-                            line-height: 14px;
-                          "
-                        >
-                          Bestellnummer
-                        </span>
-                        <p
-                          style="
-                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
-                            font-size: 16px;
-                            color: #003351;
-                            font-weight: 700;
-                          "
-                        >
-                          #DK-2002-07
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <!-- HEADER END-->
-            <!-- INVOICE-INFO -->
-            <tr>
-              <td bgcolor="#ffffff" class="invoice-td">
-                <table
-                  class="tablet-520"
-                  cellpadding="0"
-                  cellspacing="0"
-                  width="520"
-                  align="center"
-                >
-                  <tr>
-                    <td bgcolor="#ffffff">
-                      <!-- Price and button -->
-                      <table
-                        class="tablet-215"
-                        cellpadding="0"
-                        cellspacing="0"
-                        width="215"
-                        align="left"
-                      >
+                <td>
+                    <table class="main tablet-600" cellpadding="0" cellspacing="0" width="600" align="center">
                         <tr>
-                          <td bgcolor="#ffffff" class="invoice-td__text">
-                            <p
-                              style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 16px;
-                                color: #003351;
-                                font-weight: 400;
-                                line-height: 20px;
-                              "
-                            >
-                              Reebok Ltd. Internation has sent you an invoice
-                              for
-                            </p>
-                            <p
-                              class="invoice-td__intro"
-                              style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 28px;
-                                color: #293fe6;
-                                font-weight: 700;
-                              "
-                            >
-                              <span>1,000.00</span> <span>EUR</span>
-                            </p>
-                          </td>
+                            <td height="30" width="600"></td>
                         </tr>
+                        <!-- HEADER  (Invoice; from company; Related invoice)-->
                         <tr>
-                          <td bgcolor="#ffffff" class="ofer-button">
-                            <a
-                              style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 14px;
-                                color: #ffffff;
-                              "
-                              href="<%= invoiceUrl %>"
-                              >Rechnung herunterladen</a
-                            >
-                          </td>
+                            <td bgcolor="#ffffff" class="header-td">
+                                <table class="tablet-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                    <tr>
+                                        <!-- Invoice -->
+                                        <td align="left" class="header-td__element">
+                                            <span
+                                                style="
+                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                    font-size: 12px;
+                                                    color: #8fadbf;
+                                                    line-height: 14px;
+                                                "
+                                                >Rechnung</span
+                                            >
+                                            <p
+                                                style="
+                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                    font-size: 16px;
+                                                    color: #003351;
+                                                    font-weight: 700;
+                                                "
+                                            >
+                                            #SP-2022-689
+                                            </p>
+                                        </td>
+                                        <!-- Invoice end-->
+                                        <!-- From company -->
+                                        <td align="left" class="header-td__element">
+                                            <span
+                                                style="
+                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                    font-size: 12px;
+                                                    color: #8fadbf;
+                                                    line-height: 14px;
+                                                "
+                                                >von</span
+                                            >
+                                            <p
+                                                style="
+                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                    font-size: 16px;
+                                                    color: #003351;
+                                                    font-weight: 700;
+                                                "
+                                            >
+                                            TestCompany777
+                                            </p>
+                                        </td>
+                                        <!-- From company end-->
+                                        <td align="right" class="header-td__element last-element">
+                                            <div class="last-element__wrap">
+                                                <span
+                                                    style="
+                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                        font-size: 12px;
+                                                        color: #8fadbf;
+                                                        line-height: 14px;
+                                                    "
+                                                >
+                                                    Bestellnummer
+                                                </span>
+                                                <p
+                                                    style="
+                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                        font-size: 16px;
+                                                        color: #003351;
+                                                        font-weight: 700;
+                                                    "
+                                                >
+                                                8FMLF2CM
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
                         </tr>
-                      </table>
-                      <!-- Credit card -->
-                      <table
-                        class="tablet-215"
-                        cellpadding="0"
-                        cellspacing="0"
-                        width="215"
-                        align="right"
-                      >
+                        <!-- HEADER END-->
+                        <!-- INVOICE-INFO -->
                         <tr>
-                          <td bgcolor="#ffffff">
-                            <div class="invoice-td__card">
-                              <table
-                                class=""
-                                cellpadding="0"
-                                cellspacing="0"
-                                width="100%"
-                                align="center"
-                              >
+                            <td bgcolor="#ffffff" class="invoice-td">
+                                <table class="tablet-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                    <tr>
+                                        <td bgcolor="#ffffff">
+                                            <!-- Price and button -->
+                                            <table
+                                                class="tablet-215"
+                                                cellpadding="0"
+                                                cellspacing="0"
+                                                width="215"
+                                                align="left"
+                                            >
+                                                <tr>
+                                                    <td bgcolor="#ffffff" class="invoice-td__text">
+                                                        <p
+                                                            style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 16px;
+                                                                color: #003351;
+                                                                font-weight: 400;
+                                                                line-height: 20px;
+                                                            "
+                                                        >
+                                                          TestCompany777 hat Ihnen eine Rechnung gesendet über
+                                                        </p>
+                                                        <p
+                                                            class="invoice-td__intro"
+                                                            style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 28px;
+                                                                color: #293fe6;
+                                                                font-weight: 700;
+                                                            "
+                                                        >
+                                                            <span>20,00</span> <span>EUR</span>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td bgcolor="#ffffff" class="ofer-button">
+                                                        <a
+                                                            style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 15px;
+                                                                color: #ffffff;
+                                                            "
+                                                            href="/"
+                                                            >Rechnung herunterladen</a
+                                                        >
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Credit card -->
+                                            <table
+                                                class="tablet-215"
+                                                cellpadding="0"
+                                                cellspacing="0"
+                                                width="215"
+                                                align="right"
+                                            >
+                                                
+                                                
+                                                <tr>
+                                                    <td bgcolor="#ffffff">
+                                                        <div class="invoice-td__card">
+                                                            <table
+                                                                class=""
+                                                                cellpadding="0"
+                                                                cellspacing="0"
+                                                                width="100%"
+                                                                align="center"
+                                                            >
+                                                                <tr>
+                                                                    <td bgcolor="#ffffff" class="invoice-td__element">
+                                                                        <p
+                                                                            style="
+                                                                                font-family: Arial, Helvetica,
+                                                                                    sans-serif, 'Roboto';
+                                                                                font-size: 16px;
+                                                                                color: #003351;
+                                                                                font-weight: 700;
+                                                                            "
+                                                                        >
+                                                                           Kreditkarte
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td
+                                                                        bgcolor="#ffffff"
+                                                                        align="left"
+                                                                        class="card-number"
+                                                                    >
+                                                                        <!-- To change the text, the text below is commented out -->
+                                                                        <span
+                                                                            style="
+                                                                                font-family: Arial, Helvetica,
+                                                                                    sans-serif, 'Roboto';
+                                                                                font-size: 12px;
+                                                                                color: #003351;
+                                                                            "
+                                                                        >
+                                                                          **** **** **** 4242
+                                                                            
+                                                                        </span>
+                                                                    </td>
+                                                                    <td bgcolor="#ffffff" align="right">
+                                                                       
+                                                                        <img
+                                                                            class="invoice-td__img"
+                                                                            src="https://img.salespower.io/masterCardFull.png'"
+                                                                            alt="Payment method"
+                                                                        />
+                                                                      
+              
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td bgcolor="#ffffff" align="left" class="card-text">
 
-                                <tr>
-                                  <td
-                                    bgcolor="#ffffff"
-                                    align="left"
-                                    class="card-number"
-                                  >
-                                    <!-- To change the text, the text below is commented out -->
-                                  </td>
-                                  <td bgcolor="#ffffff" align="right">
-                                    <span
-                                    style="
-                                      font-family: Arial, Helvetica, sans-serif,
-                                        'Roboto';
-                                      font-size: 10px;
-                                      color: #8fadbf;
-                                    "
-                                    >Bezahlmethode:</span
-                                  ><br>
-                                    <!-- To change the image, the link below is commented out -->
-                                    <span
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif,
-                                      'Roboto';
-                                    font-size: 14px;
-                                    color: #003351;
-                                    line-height: 20px;
-                                  "
-                                >
-                                Rechnung
-                                </span>
-                                  </td>
-                                </tr>
-                              </table>
-                            </div>
-                          </td>
+                                                        <p
+                                                            style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 11px;
+                                                                color: #003351;
+                                                                font-weight: 400;
+                                                            "
+                                                        >
+                                                            Der Betrag wird automatisch von Ihrer Kreditkarte abgebucht am
+                                                            <span>26 Aug 2022</span>
+                                                        </p>
+                
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
                         </tr>
+                        <!-- PAYMENT-METHOD END-->
+                        <!-- BANK DETAILS END-->
+                        <!-- INVOICE-INFO END-->
                         <tr>
-                          <td bgcolor="#ffffff" align="left" class="card-text">
-                            <p
-                              style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 11px;
-                                color: #003351;
-                                font-weight: 400;
-                              "
-                            >
-                              The amount will be automatically deducted from
-                              this credit card on <span>18 Feb 2022</span>
-                            </p>
-                          </td>
+                            <td height="30" width="300"></td>
                         </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <!-- PAYMENT-METHOD END-->
-            <!-- BANK DETAILS -->
-            <tr>
-              <td bgcolor="#ffffff" class="bank-details__td">
-                <table
-                  class="tablet-520"
-                  cellpadding="0"
-                  cellspacing="0"
-                  width="520"
-                  align="center"
-                >
-                  <tr>
-                    <td bgcolor="#ffffff" class="bank-details__text">
-                      <span
-                        style="
-                          font-family: Arial, Helvetica, sans-serif, 'Roboto';
-                          font-size: 12px;
-                          color: #003351;
-                          line-height: 20px;
-                        "
-                      >
-                        Bitte senden Sie den Betrag an unseren Partner
-                        SalesPower GmbH, die für uns die Zahlungsabwicklung
-                        übernehmen.
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td bgcolor="#ffffff" class="bank-details__title">
-                      <table
-                        table
-                        class="tablet-520"
-                        cellpadding="0"
-                        cellspacing="0"
-                        width="520"
-                      >
+                        <!-- COMPANY ADDRESS -->
                         <tr>
-                          <td width="30" class="table-35">
-                            <img
-                              src="https://img.salespower.io/orderDetails.png"
-                              alt="user"
-                            />
-                          </td>
-                          <td>
-                            <p
-                              style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 16px;
-                                color: #003351;
-                                font-weight: 700;
-                              "
-                            >
-                              Bankverbindung
-                            </p>
-                          </td>
+                            <td bgcolor="#ffffff" class="customer-td">
+                                <table class="tablet-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                    <tr>
+                                        <td width="35" class="table-35">
+                                            <img src="https://img.salespower.io/Email.png" alt="user" />
+                                        </td>
+                                        <td bgcolor="#ffffff" class="customer-td__text customer-td__email">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <p
+                                                            style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 16px;
+                                                                color: #003351;
+                                                                line-height: 19px;
+                                                            "
+                                                        >
+                                                            Bei Fragen zu dieser Rechnung, bitte kontaktieren Sie diese
+                                                            E-Mail-Adresse
+                                                        </p>
+                                                        <p
+                                                            style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 16px;
+                                                                color: #293fe6;
+                                                                line-height: 19px;
+                                                            "
+                                                        >
+                                                        anton.izotov+test@salespower.io
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="35" class="table-35">
+                                            <img src="https://img.salespower.io/customerloc.png" alt="user" />
+                                        </td>
+                                        <td bgcolor="#ffffff" class="customer-td__text">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <p
+                                                            style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 16px;
+                                                                color: #003351;
+                                                                font-weight: 700;
+                                                                line-height: 19px;
+                                                            "
+                                                        >
+                                                        TestCompany777
+                                                        </p>
+                                                        <p
+                                                            style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 16px;
+                                                                color: #003351;
+                                                                line-height: 19px;
+                                                            "
+                                                        >
+                                                            Main 42
+                                                        </p>
+                                                        <p
+                                                            style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 16px;
+                                                                color: #003351;
+                                                                line-height: 19px;
+                                                            "
+                                                        >
+                                                        10115 Lviv, Deutschland
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
                         </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td bgcolor="#ffffff" class="bank-details__text">
-                      <table
-                        table
-                        class="tablet-520"
-                        cellpadding="0"
-                        cellspacing="0"
-                        width="520"
-                      >
-                        <td bgcolor="#ffffff" class="bank-details__element">
-                          <table>
-                            <tr>
-                              <td>
-                                <span
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif,
-                                      'Roboto';
-                                    font-size: 12px;
-                                    color: #8fadbf;
-                                  "
-                                  >IBAN:</span
-                                >
-                                <span
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif,
-                                      'Roboto';
-                                    font-size: 12px;
-                                    color: #003351;
-                                    line-height: 20px;
-                                  "
-                                >
-                                  DE1258745544
-                                </span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <span
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif,
-                                      'Roboto';
-                                    font-size: 12px;
-                                    color: #8fadbf;
-                                  "
-                                  >BIC:</span
-                                >
-                                <span
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif,
-                                      'Roboto';
-                                    font-size: 12px;
-                                    color: #003351;
-                                    line-height: 20px;
-                                  "
-                                >
-                                  EGFWEEFFWEFEWFW
-                                </span>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td bgcolor="#ffffff" class="bank-details__element">
-                          <table>
-                            <tr>
-                              <td>
-                                <span
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif,
-                                      'Roboto';
-                                    font-size: 12px;
-                                    color: #8fadbf;
-                                  "
-                                  >Kontoinhaber:</span
-                                >
-                                <span
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif,
-                                      'Roboto';
-                                    font-size: 12px;
-                                    color: #003351;
-                                    line-height: 20px;
-                                  "
-                                >
-                                  FVNHFJHFJIFEFI
-                                </span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <span
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif,
-                                      'Roboto';
-                                    font-size: 12px;
-                                    color: #8fadbf;
-                                  "
-                                  >Verwendungszweck:
-                                </span>
-                                <span
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif,
-                                      'Roboto';
-                                    font-size: 12px;
-                                    color: #003351;
-                                    line-height: 20px;
-                                  "
-                                >
-                                  ESFSFGESFSEF
-                                </span>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <!-- BANK DETAILS END-->
-            <!-- INVOICE-INFO END-->
-            <tr>
-              <td height="30" width="300"></td>
-            </tr>
-            <!-- COMPANY ADDRESS -->
-            <tr>
-              <td bgcolor="#ffffff" class="customer-td">
-                <table
-                  class="tablet-520"
-                  cellpadding="0"
-                  cellspacing="0"
-                  width="520"
-                  align="center"
-                >
-                  <tr>
-                    <td width="35" class="table-35">
-                      <img
-                        src="https://img.salespower.io/Email.png"
-                        alt="user"
-                      />
-                    </td>
-                    <td
-                      bgcolor="#ffffff"
-                      class="customer-td__text customer-td__email"
-                    >
-                      <table>
-                        <tr>
-                          <td>
-                            <p
-                              style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 16px;
-                                color: #003351;
-                                line-height: 19px;
-                              "
-                            >
-                              Bei Fragen zu dieser Rechnung, bitte kontaktieren
-                              Sie diese E-Mail-Adresse
-                            </p>
-                            <p
-                              style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 16px;
-                                color: #293fe6;
-                                line-height: 19px;
-                              "
-                            >
-                              reebok@gmail.com
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="35" class="table-35">
-                      <img
-                        src="https://img.salespower.io/customerloc.png"
-                        alt="user"
-                      />
-                    </td>
-                    <td bgcolor="#ffffff" class="customer-td__text">
-                      <table>
-                        <tr>
-                          <td>
-                            <p
-                              style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 16px;
-                                color: #003351;
-                                font-weight: 700;
-                                line-height: 19px;
-                              "
-                            >
-                              Reebok Ltd. International
-                            </p>
-                            <p
-                              style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 16px;
-                                color: #003351;
-                                line-height: 19px;
-                              "
-                            >
-                              Braunfelser Str. 30
-                            </p>
-                            <p
-                              style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 16px;
-                                color: #003351;
-                                line-height: 19px;
-                              "
-                            >
-                              Floor 8, Tower 2
-                            </p>
-                            <p
-                              style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 16px;
-                                color: #003351;
-                                line-height: 19px;
-                              "
-                            >
-                              35606 Solms-Oberndorf, Germany
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <!-- COMPANY ADDRESS END-->
+                        <!-- COMPANY ADDRESS END-->
 
-            <!-- FOOTER-->
-            <tr>
-              <td bgcolor="#003351" class="product-card-td impressum-td">
-                <table
-                  class="tablet-520"
-                  cellpadding="0"
-                  cellspacing="0"
-                  width="520"
-                  align="center"
-                >
-                  <tr>
-                    <table
-                      class="tablet-520"
-                      cellpadding="0"
-                      cellspacing="0"
-                      width="520"
-                      align="center"
-                    >
-                      <tr>
-                        <td class="logo-futer" align="left">
-                          <a target="blank" href="https://www.salespower.io/"
-                            ><img
-                              src="https://img.salespower.io/footerLogo.png"
-                              alt="logo"
-                          /></a>
-                        </td>
-                        <td class="link-wrap" align="right">
-                          <a
-                            target="blank"
-                            style="
-                              font-family: Arial, Helvetica, sans-serif,
-                                'Roboto';
-                              font-size: 14px;
-                              color: #8fadbf;
-                              line-height: 23px;
-                            "
-                            href="https://www.salespower.io/rechnungsstellung"
-                            >Learn more about SalesPower Invoicing</a
-                          >
-                        </td>
-                      </tr>
+                        <!-- FOOTER-->
+                        <tr>
+                            <td bgcolor="#003351" class="product-card-td impressum-td">
+                                <table class="tablet-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                    <tr>
+                                        <table
+                                            class="tablet-520"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            width="520"
+                                            align="center"
+                                        >
+                                            <tr>
+                                                <td class="logo-futer" align="left">
+                                                    <a target="blank" href="https://www.salespower.io/"
+                                                        ><img src="https://img.salespower.io/footerLogo.png" alt="logo"
+                                                    /></a>
+                                                </td>
+                                                <td class="link-wrap" align="right">
+                                                    <a
+                                                        target="blank"
+                                                        style="
+                                                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                            font-size: 12px;
+                                                            color: #8fadbf;
+                                                            line-height: 23px;
+                                                        "
+                                                        href="https://www.salespower.io/rechnungsstellung"
+                                                        >Erfahre mehr über Rechnungsstellung mit SalesPower</a
+                                                    >
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- FOOTER END-->
+                        <tr>
+                            <td height="30" width="300"></td>
+                        </tr>
                     </table>
-                  </tr>
-                </table>
-              </td>
+                </td>
             </tr>
-            <!-- FOOTER END-->
-            <tr>
-              <td height="30" width="300"></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
+        </table>
+    </body>
 </html>
