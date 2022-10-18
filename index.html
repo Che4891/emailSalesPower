@@ -1,239 +1,814 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Sales Power</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="msapplication-navbutton-color" content="white">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="white">
-    <meta name="color-scheme" content="dark light">
-    <meta name=”supported-color-schemes” content=”light”>
-    <meta name=”prefers-color-scheme” content=”light”>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ebf3f5">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#ebf3f5">
-    <meta name="theme-color" content="white">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
-	<style>
-		body {
-			width: 100% !important;
-			-webkit-text-size-adjust: 100%;
-			-ms-text-size-adjust: 100%;
-			margin: 0;
-			padding: 0;
-			line-height: 100%;
-			min-width: 320px;
-		}
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="msapplication-navbutton-color" content="white" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+        <meta name="color-scheme" content="light only" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+        <meta name="theme-color" content="light only" />
+        <title>Sales Power</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            :root {
+                color-scheme: light only;
 
-		[style*="Roboto"] {font-family: 'Roboto', arial, sans-serif !important;}
+                supported-color-schemes: light only;
+            }
+            body {
+                width: 100% !important;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                margin: 0;
+                padding: 0;
+                line-height: 100%;
+                min-width: 320px;
+            }
 
-		img {
-			outline: none;
-			text-decoration: none;
-			border:none;
-			-ms-interpolation-mode: bicubic;
-			max-width: 100%!important;
-			margin: 0;
-			padding: 0;
-			display: block;
-		}
-    
-		table td {
-			border-collapse: collapse;
-		}
-    
-		table {
-			border-collapse: collapse;
-			mso-table-lspace: 0pt;
-			mso-table-rspace: 0pt;
-		}
-		.content-td {
-			padding-top: 40px;
-			padding-bottom: 22px;
-			border-top: 1px solid #E6EDF5;
-		}
-		.button-td {
-			padding-top: 31px;
-			padding-bottom: 31px;
-		}
-		.btn-td a {
-			background-color: #293FE6;
-			text-align: center;
-			padding-left: 24px;
-			padding-right: 24px;
-			padding-top: 12px;
-			padding-bottom: 12px;
-			text-decoration: none;
-			border-radius: 8px;
-		}
-		.footer-td {
-			padding-bottom: 30px;
-		}
-		.fone img {
-			padding-left: 30px;
-			padding-bottom: 30px;
-		}
-		@media (max-width: 620px) {
-			.taib-600 {
-				width: 500px !important;
-			}
-			.taib-560 {
-				width: 480px !important;
-			}
-			.taib-520 {
-				width: 440px !important;
-			}
-		}
-		@media (max-width: 520px) {
-			.taib-600 {
-				width: 400px !important;
-			}
-			.taib-560 {
-				width: 380px !important;
-			}
-			.taib-520 {
-				width: 340px !important;
-			}
-		}
-		@media (max-width: 420px) {
-			.taib-600 {
-				width: 300px !important;
-			}
-			.taib-560 {
-				width: 280px !important;
-			}
-			.taib-520 {
-				width: 240px !important;
-			}
-			.signature-text p,
-			.intro p {
-				font-size: 14px !important;
-			}
-			.text-content p {
-				font-size: 20px !important;
-			}
-			.text-content, .img-content {
-				display: block;
-			}
-			.text-content br {
-				display: none;
-			}
-		}
-		@media (max-width: 320px) {
-			.taib-600 {
-				width: 250px !important;
-			}
-			.taib-560 {
-				width: 220px !important;
-			}
-			.taib-520 {
-				width: 220px !important;
-			}
-			.taib-280 {
-				width: 200px !important;
-			}
-		}
-		/* Dark mode */
-		@media (prefers-color-scheme: dark) { 
-			.header-td, .content-td, .text-td, .button-td, .signature-td, .footer-td {
-				background-color: #ffffff !important;
-			}
-		}
-	</style>
-</head>
+            [style*="Roboto"] {
+                font-family: "Roboto", arial, sans-serif !important;
+            }
 
-<body style="margin: 0; padding: 0;">
-	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Sales Power</div>
-	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#EBF3F5">
-		<tr>
-			<td>
-				<table class="main taib-600" cellpadding="0" cellspacing="0" width="600px" align="center">
-					<tr>
-						<td height="30" width="600px"></td>
-					</tr>
-					<tr>
-						<td class="header-td"  bgcolor="#ffffff">
-							<table class="taib-560" cellpadding="0" cellspacing="0" width="560px" align="right">
-								<tr>
-									<td align="left" class="logo">
-										<img src="https://img.salespower.io/logo.png" alt="logo" />
-									</td>
-									<td align="right" class="fone">
-										<img src="https://img.salespower.io/fone.png" alt="fone" />
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td class="content-td" bgcolor="#ffffff">
-							<table class="content taib-520" cellpadding="0" cellspacing="0" width="520px" align="center">
-								<tr>
-									<td class="text-content"> 
-										<p style="font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-size: 28px; color: #003351; font-weight: 700; line-height: 33px;">Reset<br /> password</p>
-									</td>
-									<td align="right" class="img-content">
-										<img src="https://img.salespower.io/password.png" alt="lock" />
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td class="text-td" bgcolor="#ffffff">
-							<table class="intro taib-520" cellpadding="0" cellspacing="0" width="520px" align="center">
-								<tr>
-									<td class="text intro">
-										<p style="font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-size: 16px; color: #003351; line-height: 20px;">Hi Dario UXtest,</p>
-										<p style="font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-size: 16px; color: #003351; line-height: 20px;">We’we received a request to set a new password for this SalesPower account: <span style="font-weight: 700;">dario.shoppen+uxtest@dbce.group</span></p>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td class="button-td"  bgcolor="#ffffff">
-							<table class="btn taib-520" cellpadding="0" cellspacing="0" width="520px" align="center">
-								<tr>
-									<td align="left" class="btn-td">
-										<a style="font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-size: 16px; color: #ffffff; " href="#">Set new password</a>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td class="signature-td" bgcolor="#ffffff">
-							<table class="signature taib-520" cellpadding="0" cellspacing="0" width="520px" align="center">
-								<tr>
-									<td class="signature-text"> 
-										<p style="font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-size: 16px; color: #003351; line-height: 20px;">If you didn’t request this, you can safely ignore this email.</p>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td height="75" width="600px" bgcolor="#ffffff"></td>
-					</tr>
-					<tr>
-						<td class="footer-td" bgcolor="#ffffff">
-							<table class="footer taib-280" cellpadding="0" cellspacing="0" width="280px" align="left">
-								<tr>
-									<td align="left" class="footer-img">
-										<img src="https://img.salespower.io/footer.png" alt="animation" />
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td height="30" width="600px"></td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-</body>
+            img {
+                max-width: 100% !important;
+            }
 
+            table td {
+                border-collapse: collapse;
+            }
+
+            table {
+                border-collapse: collapse;
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+            }
+
+            @media (max-width: 620px) {
+                .taib-600 {
+                    width: 500px !important;
+                }
+
+                .taib-560 {
+                    width: 480px !important;
+                }
+
+                .taib-520 {
+                    width: 440px !important;
+                }
+
+                .footer-info {
+                    width: 150px !important;
+                }
+
+                .footer-info__intro {
+                    width: 100% !important;
+                }
+            }
+
+            @media (max-width: 520px) {
+                .taib-600 {
+                    width: 400px !important;
+                }
+
+                .taib-560 {
+                    width: 380px !important;
+                }
+
+                .taib-520 {
+                    width: 340px !important;
+                }
+            }
+
+            @media (max-width: 420px) {
+                .taib-600 {
+                    width: 300px !important;
+                }
+
+                .taib-560 {
+                    width: 280px !important;
+                }
+
+                .taib-520 {
+                    width: 240px !important;
+                }
+
+                .signature-text p,
+                .intro p {
+                    font-size: 14px !important;
+                }
+
+                .text-content p {
+                    font-size: 20px !important;
+                }
+
+                .text-content,
+                .img-content {
+                    display: block;
+                }
+
+                .text-content br {
+                    display: none;
+                }
+
+                .btn-td a {
+                    font-size: 14px !important;
+                    padding-left: 8px !important;
+                    padding-right: 8px !important;
+                    padding-top: 5px !important;
+                    padding-bottom: 5px !important;
+                }
+            }
+
+            @media (max-width: 320px) {
+                .taib-600 {
+                    width: 250px !important;
+                }
+
+                .taib-560 {
+                    width: 220px !important;
+                }
+
+                .taib-520 {
+                    width: 220px !important;
+                }
+
+                .taib-280 {
+                    width: 200px !important;
+                }
+
+                .fone img {
+                    width: 70px !important;
+                }
+                .logo img {
+                    padding-left: 0 !important;
+                    width: 120px !important;
+                }
+            }
+
+            /* Dark mode */
+            @media (prefers-color-scheme: dark) {
+                .header-td,
+                .content-td,
+                .text-td,
+                .button-td,
+                .signature-td,
+                .footer-td {
+                    background-color: #fffffe !important;
+                }
+
+                .footer-info,
+                .footer-info__intro,
+                .text-content p,
+                .intro p{
+                    color: #003351 !important;
+                }
+
+                .signature-text p {
+                    color: #8fadbf !important;
+                }
+            }
+        </style>
+    </head>
+
+    <body style="margin: 0; padding: 0">
+        <div
+            style="
+                font-size: 0px;
+                font-color: #fffffe;
+                opacity: 0;
+                visibility: hidden;
+                width: 0;
+                height: 0;
+                display: none;
+            "
+        >
+            Sales Power
+        </div>
+        <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#EBF3F5">
+            <tr>
+                <td>
+                    <table class="main taib-600" cellpadding="0" cellspacing="0" width="600px" align="center">
+                        <tr>
+                            <td height="30" width="600px"></td>
+                        </tr>
+                        <tr>
+                            <td class="header-td" bgcolor="#fffffe">
+                                <table class="taib-560" cellpadding="0" cellspacing="0" width="560px" align="right">
+                                    <tr>
+                                        <td align="left" class="logo">
+                                            <img
+                                                src="https://img.salespower.io/salespower.png"
+                                                alt="logo"
+                                                style="
+                                                    display: block;
+                                                    outline: none;
+                                                    text-decoration: none;
+                                                    border: none;
+                                                    -ms-interpolation-mode: bicubic;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                "
+                                            />
+                                        </td>
+                                        <td align="right" class="fone">
+                                            <img
+                                                src="https://img.salespower.io/fone.png"
+                                                alt="fone"
+                                                style="
+                                                    display: block;
+                                                    outline: none;
+                                                    text-decoration: none;
+                                                    border: none;
+                                                    -ms-interpolation-mode: bicubic;
+                                                    margin: 0;
+                                                    padding-left: 30px;
+                                                    padding-bottom: 30px;
+                                                "
+                                            />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                                class="content-td"
+                                bgcolor="#fffffe"
+                                style="padding-top: 40px; padding-bottom: 22px; border-top: 1px solid #e6edf5"
+                            >
+                                <table
+                                    class="content taib-520"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="520px"
+                                    align="center"
+                                >
+                                    <tr>
+                                        <td class="text-content">
+                                            <p
+                                                style="
+                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                    font-size: 28px;
+                                                    color: #003351;
+                                                    font-weight: 700;
+                                                    line-height: 33px;
+                                                    -webkit-text-size-adjust: none;
+                                                "
+                                            >
+                                                Passwort<br />
+                                                zurücksetzen
+                                            </p>
+                                        </td>
+                                        <td align="right" class="img-content">
+                                            <img
+                                                src="https://img.salespower.io/password.png"
+                                                alt="lock"
+                                                style="
+                                                    display: block;
+                                                    outline: none;
+                                                    text-decoration: none;
+                                                    border: none;
+                                                    -ms-interpolation-mode: bicubic;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                "
+                                            />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-td" bgcolor="#fffffe">
+                                <table
+                                    class="intro taib-520"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="520px"
+                                    align="center"
+                                >
+                                    <tr>
+                                        <td class="text intro">
+                                            <p
+                                                style="
+                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                    font-size: 16px;
+                                                    color: #003351;
+                                                    line-height: 20px;
+                                                    -webkit-text-size-adjust: none;
+                                                "
+                                            >
+                                                Hallo <%= name %>,
+                                            </p>
+                                            <p
+                                                style="
+                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                    font-size: 16px;
+                                                    color: #003351;
+                                                    line-height: 20px;
+                                                    -webkit-text-size-adjust: none;
+                                                "
+                                            >
+                                                Wir haben eine Anfrage erhalten, das Passwort für diesen SalesPower
+                                                Account zurückzusetzen:
+                                                <span style="font-weight: 700"><%= email %></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="button-td" bgcolor="#fffffe" style="padding-top: 31px; padding-bottom: 31px">
+                                <table
+                                    class="btn taib-520"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="520px"
+                                    align="center"
+                                >
+                                    <tr>
+                                        <td align="left" class="btn-td">
+                                            <a
+                                                style="
+                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                    font-size: 16px;
+                                                    color: #fffffe;
+                                                    background-color: #293fe6;
+                                                    text-align: center;
+                                                    padding-left: 24px;
+                                                    padding-right: 24px;
+                                                    padding-top: 12px;
+                                                    padding-bottom: 12px;
+                                                    text-decoration: none;
+                                                    border-radius: 8px;
+                                                    -webkit-text-size-adjust: none;
+                                                "
+                                                href="<%= link %>"
+                                                >Neues Passwort vergeben</a
+                                            >
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="signature-td" bgcolor="#fffffe">
+                                <table
+                                    class="signature taib-520"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="520px"
+                                    align="center"
+                                >
+                                    <tr>
+                                        <td class="signature-text">
+                                            <p
+                                                style="
+                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                    font-size: 14px;
+                                                    color: #8fadbf;
+                                                    line-height: 18px;
+                                                "
+                                            >
+                                                Diese E-Mail enthält vertrauliche und/oder rechtlich geschützte
+                                                Informationen. Wenn Sie nicht der richtige Adressat sind oder diese
+                                                E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den
+                                                Absender und vernichten Sie diese Mail. Das unerlaubte Kopieren sowie
+                                                die unbefugte Weitergabe dieser Mail ist nicht gestattet.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="25" width="600px" bgcolor="#fffffe"></td>
+                        </tr>
+                        <!-- footer-start -->
+                        <tr>
+                            <td class="footer-td" bgcolor="#fffffe" style="padding-bottom: 10px">
+                                <table
+                                    class="footer taib-280"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    width="280px"
+                                    align="left"
+                                >
+                                    <tr>
+                                        <td align="left" class="footer-img">
+                                            <img
+                                                src="https://img.salespower.io/footer.png"
+                                                alt="animation"
+                                                border="0"
+                                                style="
+                                                    display: block;
+                                                    outline: none;
+                                                    text-decoration: none;
+                                                    border: none;
+                                                    -ms-interpolation-mode: bicubic;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                "
+                                            />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- footer-intro -->
+                        <tr>
+                            <td align="center" bgcolor="#FFFFFE">
+                                <center style="max-width: 520px; width: 100%" class="taib-520">
+                                    <!--[if gte mso 9]>
+                                    <table border="0" cellpadding="0" cellspacing="0" style="margin:0; padding:0"><tr><td>
+                                    <![endif]-->
+                                    <table
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        style="margin: 0; padding: 0"
+                                        width="100%"
+                                    >
+                                        <tr>
+                                            <td bgcolor="#FFFFFE">
+                                                <!--[if gte mso 9]>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="170" align="center">
+                                                    <tr>
+                                                    <td>
+                                            <![endif]-->
+
+                                                <p
+                                                    class="footer-info"
+                                                    style="
+                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                        display: inline-block;
+                                                        vertical-align: top;
+                                                        width: 210px;
+                                                    "
+                                                >
+                                                    <span
+                                                        style="
+                                                            display: inline-block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            padding-bottom: 7px;
+                                                        "
+                                                        ><b>Impressum</b></span
+                                                    >
+                                                    <span
+                                                        class="footer-info__intro"
+                                                        style="
+                                                            width: 150px;
+                                                            display: block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                    >
+                                                        SalesPower GmbH<br />
+                                                        Industriering Ost 66<br />
+                                                        47906 Kempen<br />
+                                                        Deutschland
+                                                    </span>
+                                                </p>
+
+                                                <!--[if gte mso 9]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                </td>
+
+                                                <td align="center">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="170" align="center">
+                                                        <tr>
+                                                        <td>
+                                                <![endif]-->
+
+                                                <p
+                                                    class="footer-info"
+                                                    style="
+                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                        display: inline-block;
+                                                        vertical-align: top;
+                                                        width: 170px;
+                                                    "
+                                                >
+                                                    <span
+                                                        style="
+                                                            display: inline-block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            padding-bottom: 7px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                        ><b>Telefon:</b></span
+                                                    >
+                                                    <span
+                                                        class="footer-info__intro"
+                                                        style="
+                                                            width: 130px;
+                                                            display: block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            padding-bottom: 10px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                    >
+                                                        +49 2152 8742009
+                                                    </span>
+                                                    <span
+                                                        style="
+                                                            display: inline-block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            padding-bottom: 7px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                        ><b>E-Mail:</b></span
+                                                    >
+                                                    <span
+                                                        class="footer-info__intro"
+                                                        style="
+                                                            width: 130px;
+                                                            display: block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            padding-bottom: 10px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                    >
+                                                        info@salespower.io
+                                                    </span>
+                                                </p>
+
+                                                <!--[if gte mso 9]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                </td>
+
+                                                <td align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="170" align="center">
+                                                <tr>
+                                                <td>
+                                                <![endif]-->
+
+                                                <p
+                                                    style="
+                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                        display: inline-block;
+                                                        vertical-align: top;
+                                                        width: 115px;
+                                                    "
+                                                >
+                                                    <span
+                                                        style="
+                                                            display: inline-block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            padding-bottom: 7px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                        ><b>Vertreten durch:</b></span
+                                                    >
+                                                    <span
+                                                        style="
+                                                            display: block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                    >
+                                                        Sergej Dubowik
+                                                    </span>
+                                                    <span
+                                                        style="
+                                                            display: block;
+                                                            font-size: 12px;
+                                                            color: #003351;
+                                                            line-height: 16px;
+                                                            padding-bottom: 7px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                        >Geschäftsführer</span
+                                                    >
+                                                    <span
+                                                        style="
+                                                            display: block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                    >
+                                                        Dominik Biss
+                                                    </span>
+                                                    <span
+                                                        style="
+                                                            display: block;
+                                                            font-size: 12px;
+                                                            color: #003351;
+                                                            line-height: 16px;
+                                                            padding-bottom: 7px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                        >Geschäftsführer</span
+                                                    >
+                                                </p>
+
+                                                <!--[if gte mso 9]>
+                                                </td></tr></table>
+                                                </td>
+                                                </tr></table>
+                                                <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if gte mso 9]>
+                                    </td></tr></table>
+                                    <![endif]-->
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#FFFFFE">
+                                <center style="max-width: 520px; width: 100%" class="taib-520">
+                                    <!--[if gte mso 9]>
+                                    <table border="0" cellpadding="0" cellspacing="0" style="margin:0; padding:0"><tr><td>
+                                    <![endif]-->
+                                    <table
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        style="margin: 0; padding: 0"
+                                        width="100%"
+                                    >
+                                        <tr>
+                                            <td>
+                                                <!--[if gte mso 9]>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr><td align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="250"     align="center"><tr><td>
+                                            <![endif]-->
+
+                                                <p
+                                                    class="footer-info"
+                                                    style="
+                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                        display: inline-block;
+                                                        vertical-align: top;
+                                                        width: 210px;
+                                                    "
+                                                >
+                                                    <span
+                                                        style="
+                                                            display: inline-block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            padding-bottom: 7px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                        ><b>Registereintrag:</b></span
+                                                    >
+                                                    <span
+                                                        class="footer-info__intro"
+                                                        style="
+                                                            width: 195px;
+                                                            display: block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                    >
+                                                        Eintragung im Handelsregister. <br />
+                                                        Amtsgericht Krefeld <br />
+                                                        Registernummer: HRB16025
+                                                    </span>
+                                                </p>
+                                                <!--[if gte mso 9]>
+                                                </td></tr></table>
+                                                </td>
+                                                <td align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="250" align="center"><tr><td>
+                                                <![endif]-->
+                                                <p
+                                                    class="footer-info"
+                                                    style="
+                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                        display: inline-block;
+                                                        vertical-align: top;
+                                                        width: 300px;
+                                                    "
+                                                >
+                                                    <span
+                                                        style="
+                                                            display: inline-block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            padding-bottom: 7px;
+                                                            -webkit-text-size-adjust: none;
+                                                        "
+                                                        ><b>Umsatzsteuer:</b></span
+                                                    >
+                                                    <span
+                                                        class="footer-info__intro"
+                                                        style="
+                                                            width: 235px;
+                                                            display: block;
+                                                            font-size: 14px;
+                                                            color: #003351;
+                                                            line-height: 18px;
+                                                            -webkit-text-size-adjust: none;
+                                                            word-break: break-all;
+                                                        "
+                                                    >
+                                                        UmsatzsteuerIdentifikationsnummer:<br />
+                                                        DE310355193
+                                                    </span>
+                                                </p>
+                                                <!--[if gte mso 9]>
+                                                </td></tr></table>
+                                                </td>
+                                                </tr></table>
+                                                <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if gte mso 9]>
+                                    </td></tr></table>
+                                    <![endif]-->
+                                </center>
+                            </td>
+                        </tr>
+                        <!-- footer-icon -->
+                        <tr>
+                            <td class="header-td" bgcolor="#fffffe">
+                                <table class="taib-560" cellpadding="0" cellspacing="0" width="560px" align="right">
+                                    <tr>
+                                        <td align="left">
+                                            <img
+                                                src="https://img.salespower.io/dots.png"
+                                                alt="dots"
+                                                width="58"
+                                                border="0"
+                                                style="
+                                                    display: block;
+                                                    outline: none;
+                                                    text-decoration: none;
+                                                    border: none;
+                                                    -ms-interpolation-mode: bicubic;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                "
+                                            />
+                                        </td>
+                                        <td align="right">
+                                            <img
+                                                src="https://img.salespower.io/GreenEllipse.png"
+                                                alt="footer"
+                                                width="70"
+                                                border="0"
+                                                style="
+                                                    display: block;
+                                                    outline: none;
+                                                    text-decoration: none;
+                                                    border: none;
+                                                    -ms-interpolation-mode: bicubic;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                "
+                                            />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" width="600px"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>
