@@ -1,0 +1,565 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msapplication-navbutton-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="white" />
+    <meta name="theme-color" content="white" />
+    <title>Sales Power</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+            min-width: 375px;
+        }
+
+        [style*="Roboto"] {
+            font-family: "Roboto", arial, sans-serif !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .footer-text * {
+            color: #8fadbf !important;
+        }
+
+        .footer-text p *,
+        .footer-text p span,
+        .footer-text ol li,
+        .footer-text ul li,
+        .footer-text ol li span,
+        .footer-text ul li span {
+            color: #8fadbf !important;
+        }
+
+        @media (max-width: 620px) {
+            .tablet-600 {
+                width: 500px !important;
+            }
+
+            .tablet-520 {
+                width: 440px !important;
+            }
+
+            .black-16,
+            .grey-16 {
+                font-size: 14px !important;
+            }
+
+            .py-40 {
+                padding-bottom: 20px !important;
+                padding-top: 20px !important;
+            }
+
+            .pt-40 {
+                padding-top: 20px !important;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .tablet-600 {
+                width: 400px !important;
+            }
+
+            .tablet-520 {
+                width: 340px !important;
+            }
+
+            .tablet-300 {
+                width: 250px !important;
+            }
+
+            .pb-20 {
+                padding-bottom: 10px !important;
+            }
+
+            .pt-20 {
+                padding-top: 10px !important;
+            }
+
+            .pt-25 {
+                padding-top: 15px !important;
+            }
+
+            .pb-25 {
+                padding-bottom: 15px !important;
+            }
+
+            .black-16,
+            .grey-16 {
+                font-size: 12px !important;
+                line-height: 14px !important;
+            }
+
+            .black-12,
+            .grey-12 {
+                font-size: 10px !important;
+                line-height: 12px !important;
+            }
+
+            .table-35 {
+                width: 25px !important;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .tablet-600 {
+                width: 300px !important;
+            }
+
+            .tablet-520 {
+                width: 260px !important;
+            }
+
+            .tablet-300 {
+                width: 200px !important;
+            }
+
+            .table-35 {
+                width: 15px !important;
+            }
+
+            .pt-25 {
+                padding-top: 15px !important;
+            }
+
+            .pb-25 {
+                padding-bottom: 15px !important;
+            }
+
+            .black-16,
+            .grey-16 {
+                font-size: 10px !important;
+                line-height: 12px !important;
+            }
+
+            .black-12,
+            .grey-12 {
+                font-size: 8px !important;
+                line-height: 10px !important;
+            }
+
+            .py-40 {
+                padding-bottom: 10px !important;
+                padding-top: 10px !important;
+            }
+
+            .pt-40 {
+                padding-top: 10px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0">
+    <div style="font-size: 0px; color: #ffffff; opacity: 0; visibility: hidden; width: 0; height: 0; display: none">
+    </div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#EBF3F5">
+        <tr>
+            <td>
+                <table class="main tablet-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                    <tr>
+                        <td height="30" width="600"></td>
+                    </tr>
+                    <!-- HEADER  (Invoice; from company; Related invoice)-->
+                    <tr>
+                        <td bgcolor="#ffffff" style="padding-top: 40px" class="pt-40">
+                            <table class="tablet-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <!-- From company -->
+                                    <td align="left" class="pb-20"
+                                        style="border-bottom: 1px solid #e6edf5; padding-bottom: 20px">
+                                        <span class="grey-12" style="
+                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                    font-size: 12px;
+                                                    color: #8fadbf;
+                                                    line-height: 14px;
+                                                ">von</span>
+                                        <p class="black-16" style="
+                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                    font-size: 16px;
+                                                    color: #003351;
+                                                    font-weight: 700;
+                                                    padding-top: 5px;
+                                                    padding-bottom: 5px;
+                                                ">
+                                            <%- companyName %>
+                                        </p>
+                                    </td>
+                                    <!-- From company end-->
+                                    <td align="right" class="pb-20"
+                                        style="border-bottom: 1px solid #e6edf5; padding-bottom: 20px">
+                                        <div style="border-left: 1px solid #e6edf5">
+                                            <span class="grey-12" style="
+                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                        font-size: 12px;
+                                                        color: #8fadbf;
+                                                        line-height: 14px;
+                                                    ">
+                                                Bestellnummer
+                                            </span>
+                                            <p class="black-16" style="
+                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                        font-size: 16px;
+                                                        color: #003351;
+                                                        font-weight: 700;
+                                                        padding-top: 5px;
+                                                        padding-bottom: 5px;
+                                                    ">
+                                                <%- uid %>
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- HEADER END-->
+                    <!-- INVOICE-INFO -->
+                    <tr>
+                        <td bgcolor="#ffffff" class="pb-20 pt-20" style="padding-top: 25px; padding-bottom: 20px">
+                            <table class="tablet-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td bgcolor="#ffffff">
+                                        <span class="black-16" style="
+                                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                        font-size: 16px;
+                                                                        font-weight: 700;
+                                                                        color: #003351;
+                                                                    ">Dies ist eine Erinnerung, dass Ihre nächste Rate
+                                            in 7 Tagen fällig ist:
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#ffffff" class="pb-20 pt-20"
+                                        style="padding-top: 20px; padding-bottom: 20px">
+                                        <table class="tablet-300 " cellpadding="0" cellspacing="0" width="300"
+                                            align="center">
+                                            <thead>
+                                                <tr>
+                                                    <th class="pt-20 pb-20"
+                                                        style="padding-bottom: 15px; padding-top: 15px" align="center">
+                                                        <span class="grey-16" style="
+                                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                    font-size: 16px;
+                                                                    font-weight: 400;
+                                                                    color: #8fadbf;
+                                                                ">Due date</span>
+                                                    </th>
+                                                    <th class="pt-20 pb-20"
+                                                        style="padding-bottom: 15px; padding-top: 15px" align="center">
+                                                        <span class="grey-16" style="
+                                                                    font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                    font-size: 16px;
+                                                                    font-weight: 400;
+                                                                    color: #8fadbf;
+                                                                ">Amount</span>
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="pt-20 pb-20"
+                                                        style="border-top: 1px solid #e6edf5; padding-bottom: 15px; padding-top: 15px"
+                                                        align="center">
+                                                        <span class="black-16" style="
+                                                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                                        font-size: 16px;
+                                                                                        color: #003351;
+                                                                                    ">
+
+                                                            <%- Date %>
+                                                        </span>
+                                                    </td>
+                                                    <td class="pt-20 pb-20"
+                                                        style="border-top: 1px solid #e6edf5;padding-bottom: 15px; padding-top: 15px"
+                                                        align="center">
+                                                        <span class="black-16" style="
+                                                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                                        font-size: 16px;
+                                                                                        color: #003351;
+                                                                                    ">
+
+                                                            <%- Amount %>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="black-16" style="padding-top: 10px;
+                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                        font-size: 16px;
+                                        color: #003351;
+                                    "> <%- paymentMethod==='sepa_debit' || 'card' || amex'
+                                                ? 'Die einzelnen Raten buchen wir automatisch gemäß des Ratenzahlungsplans  '
+                                                : 'Bitte überweisen Sie die einzelnen Raten pünktlich gemäß des Ratenzahlungsplans an folgendes Konto:'
+                                                %><br />
+                                                <% if (paymentMethod==='card' || paymentMethod==='amex' ) { %>
+                                                    von Ihrer Karte ab:
+                                                    <span class="black-16" style="
+                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                font-size: 16px;
+                                                font-weight: 700;
+                                                color: #003351;
+                                            ">
+                                                        <%= `**** **** **** **${last4}` %>
+                                                    </span>
+                                                    <% } else if (paymentMethod==='sepa_debit' ) { %>
+                                                        von Ihrem Bankkonto ab:
+                                                        <span class="black-16" style="
+                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                font-size: 16px;
+                                                font-weight: 700;
+                                                color: #003351;
+                                            ">
+                                                            <%= `${sepaPrefix} **** **** **** **${last4}` %>
+                                                        </span>
+                                                        <% } else { %>
+                                                            <div class="grey-12" style="
+                                                    font-family: Arial, Helvetica, sans-serif,
+                                                        'Roboto';
+                                                    font-size: 12px;
+                                                    color: #8fadbf;
+                                                ">
+                                                                IBAN:
+                                                                <span class="black-12" style="
+                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                font-size: 12px;
+                                                font-weight: 700;
+                                                color: #003351;
+                                            ">
+                                                                    <%- `${bankDetails['IBAN']}` %>
+                                                                </span>
+                                                            </div>
+                                                            <div class="grey-12" style="
+                                                    font-family: Arial, Helvetica, sans-serif,
+                                                        'Roboto';
+                                                    font-size: 12px;
+                                                    color: #8fadbf;
+                                                ">
+                                                                BIC:
+                                                                <span class="black-12" style="
+                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                font-size: 12px;
+                                                font-weight: 700;
+                                                color: #003351;
+                                            ">
+                                                                    <%- `${bankDetails['BIC']}` %>
+                                                                </span>
+                                                            </div>
+                                                            <div class="grey-12" style="
+                                                    font-family: Arial, Helvetica, sans-serif,
+                                                        'Roboto';
+                                                    font-size: 12px;
+                                                    color: #8fadbf;
+                                                ">
+                                                                Kontoinhaber:
+                                                                <span class="black-12" style="
+                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                font-size: 12px;
+                                                font-weight: 700;
+                                                color: #003351;
+                                            ">
+                                                                    <%- `${bankDetails['account_holder_name']}` %>
+                                                                </span>
+                                                            </div>
+                                                            <div class="grey-12" style="
+                                                    font-family: Arial, Helvetica, sans-serif,
+                                                        'Roboto';
+                                                    font-size: 12px;
+                                                    color: #8fadbf;
+                                                ">
+                                                                Verwendungszweck:
+                                                                <span class="black-12" style="
+                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                font-size: 12px;
+                                                font-weight: 700;
+                                                color: #003351;
+                                            ">
+                                                                    <%- `${bankDetails['reference']}` %>
+                                                                </span>
+                                                            </div>
+                                                            <% } %>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- INVOICE-INFO END-->
+                    <tr>
+                        <td height="30" width="300"></td>
+                    </tr>
+                    <!-- COMPANY ADDRESS -->
+                    <tr>
+                        <td bgcolor="#ffffff" class="pb-25 pt-25" style="padding-top: 25px; padding-bottom: 25px">
+                            <table class="tablet-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td width="35" class="table-35" style="vertical-align: top; padding-right: 5px">
+                                        <img src="https://d20zomu46eyic2.cloudfront.net/Email.png" alt="user" style="
+                                                    display: block;
+                                                    outline: none;
+                                                    text-decoration: none;
+                                                    border: none;
+                                                    -ms-interpolation-mode: bicubic;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                " />
+                                    </td>
+                                    <td style="vertical-align: top" bgcolor="#ffffff">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p class="black-16" style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 16px;
+                                                                color: #003351;
+                                                                line-height: 19px;
+                                                                padding-bottom: 5px;
+                                                            ">
+                                                        Bei Fragen zu dieser Rechnung, bitte kontaktieren Sie
+                                                        diese
+                                                        E-Mail-Adresse
+                                                    </p>
+                                                    <p class="black-16" style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 16px;
+                                                                color: #293fe6;
+                                                                line-height: 19px;
+                                                            ">
+                                                        <%= email %>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- COMPANY ADDRESS END-->
+
+                    <!-- FOOTER-->
+                    <tr>
+                        <td bgcolor="#003351" style="padding-top: 40px; padding-bottom: 40px" class="py-40">
+                            <table class="tablet-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td bgcolor="#003351" style="padding-bottom: 30px">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p class="black-16" style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 14px;
+                                                                color: #8fadbf;
+                                                                line-height: 19px;
+                                                                font-weight: 700;
+                                                                padding-bottom: 5px;
+                                                            ">
+                                                        Impressum
+                                                    </p>
+                                                    <div class="black-12 footer-text" style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 12px;
+                                                                color: #8fadbf;
+                                                                line-height: 16px;
+                                                                padding-top: 5px;
+                                                            ">
+                                                        <%- agreements %>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <table class="tablet-520" cellpadding="0" cellspacing="0" width="520"
+                                        align="center">
+                                        <tr>
+                                            <td align="left" style="padding-right: 15px">
+                                                <a target="blank" href="https://www.salespower.io/"><img
+                                                        src="https://d20zomu46eyic2.cloudfront.net/newBottomLogo.jpg"
+                                                        width="170" alt="footer" style="
+                                                                display: block;
+                                                                outline: none;
+                                                                text-decoration: none;
+                                                                border: none;
+                                                                -ms-interpolation-mode: bicubic;
+                                                                margin: 0;
+                                                                padding: 0;
+                                                            " />
+                                                </a>
+                                            </td>
+                                            <td align="right"
+                                                style="border-left: 1px solid #8fadbf; vertical-align: inherit">
+                                                <a class="grey-12" target="blank" style="
+                                                            font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                            font-size: 12px;
+                                                            color: #8fadbf;
+                                                            line-height: 23px;
+                                                            padding-top: 5px;
+                                                            display: block;
+                                                            text-decoration: none;
+                                                        " href="https://www.salespower.io/rechnungsstellung">Erfahre
+                                                    mehr über Rechnungsstellung mit SalesPower</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- FOOTER END-->
+                    <tr>
+                        <td height="30" width="300"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
