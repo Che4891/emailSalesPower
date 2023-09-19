@@ -4,15 +4,23 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Sales Power</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="msapplication-navbutton-color" content="white">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="white">
-    <meta name="color-scheme" content="dark light">
-    <meta name=”supported-color-schemes” content=”light”>
-    <meta name=”prefers-color-scheme” content=”light”>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ebf3f5">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#ebf3f5">
-    <meta name="theme-color" content="white">
+    <meta name="msapplication-navbutton-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="”supported-color-schemes”" content="”light”" />
+    <meta name="”prefers-color-scheme”" content="”light”" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#ebf3f5"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#ebf3f5"
+    />
+    <meta name="theme-color" content="white" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
       rel="stylesheet"
@@ -262,24 +270,28 @@
           padding-bottom: 15px;
         }
       }
-          /* Dark mode */
-		@media (prefers-color-scheme: light) { 
-			.header-td, .invoice-td, .customer-td{
-				background-color: #ffffff !important;
-			}
-      .impressum-td {
-        background-color: #003351 !important ;
+      /* Dark mode */
+      @media (prefers-color-scheme: light) {
+        .header-td,
+        .invoice-td,
+        .customer-td {
+          background-color: #ffffff !important;
+        }
+        .impressum-td {
+          background-color: #003351 !important ;
+        }
       }
-		}
-              /* Dark mode */
-		@media (prefers-color-scheme: light) { 
-			.header-td, .invoice-td, .customer-td{
-				background-color: #f7f70f !important;
-			}
-      .impressum-td {
-        background-color: #f71313 !important ;
+      /* Dark mode */
+      @media (prefers-color-scheme: light) {
+        .header-td,
+        .invoice-td,
+        .customer-td {
+          background-color: #f7f70f !important;
+        }
+        .impressum-td {
+          background-color: #f71313 !important ;
+        }
       }
-		}
     </style>
   </head>
 
@@ -542,8 +554,7 @@
                               "
                             >
                               The amount will be automatically deducted from
-                              this credit card 
-                              on <span>18 Feb 2022</span>
+                              this credit card on <span>18 Feb 2022</span>
                             </p>
                           </td>
                         </tr>
@@ -677,7 +688,11 @@
 
             <!-- FOOTER-->
             <tr>
-              <td bgcolor="#003351" class="product-card-td impressum-td">
+              <td
+                bgcolor="#003351"
+                style="padding-top: 40px; padding-bottom: 40px"
+                class="py-40"
+              >
                 <table
                   class="tablet-520"
                   cellpadding="0"
@@ -685,6 +700,43 @@
                   width="520"
                   align="center"
                 >
+                  <tr>
+                    <td bgcolor="#003351" style="padding-bottom: 30px">
+                      <table>
+                        <tr>
+                          <td>
+                            <p
+                              class="black-16"
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 14px;
+                                color: #8fadbf;
+                                line-height: 19px;
+                                font-weight: 700;
+                                padding-bottom: 5px;
+                              "
+                            >
+                              Impressum
+                            </p>
+                            <div
+                              class="black-12 footer-text"
+                              style="
+                                font-family: Arial, Helvetica, sans-serif,
+                                  'Roboto';
+                                font-size: 12px;
+                                color: #8fadbf;
+                                line-height: 16px;
+                                padding-top: 5px;
+                              "
+                            >
+                              Some test text or not only text
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
                   <tr>
                     <table
                       class="tablet-520"
@@ -694,25 +746,47 @@
                       align="center"
                     >
                       <tr>
-                        <td class="logo-futer" align="left">
+                        <td align="left" style="padding-right: 15px">
                           <a target="blank" href="https://www.salespower.io/"
                             ><img
                               src="https://img.salespower.io/footerLogo.png"
-                              alt="logo"
-                          /></a>
+                              width="170"
+                              alt="footer"
+                              style="
+                                display: block;
+                                outline: none;
+                                text-decoration: none;
+                                border: none;
+                                -ms-interpolation-mode: bicubic;
+                                margin: 0;
+                                padding: 0;
+                              "
+                            />
+                          </a>
                         </td>
-                        <td class="link-wrap" align="right">
+                        <td
+                          align="right"
+                          style="
+                            border-left: 1px solid #8fadbf;
+                            vertical-align: inherit;
+                          "
+                        >
                           <a
+                            class="grey-12"
                             target="blank"
                             style="
                               font-family: Arial, Helvetica, sans-serif,
                                 'Roboto';
-                              font-size: 14px;
+                              font-size: 12px;
                               color: #8fadbf;
                               line-height: 23px;
+                              padding-top: 5px;
+                              display: block;
+                              text-decoration: none;
                             "
                             href="https://www.salespower.io/rechnungsstellung"
-                            >Learn more about SalesPower Invoicing</a
+                            >Erfahre mehr über Rechnungsstellung mit
+                            SalesPower</a
                           >
                         </td>
                       </tr>
