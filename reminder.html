@@ -40,6 +40,11 @@
             display: block;
         }
 
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
         table td {
             border-collapse: collapse;
         }
@@ -96,12 +101,6 @@
                 line-height: 14px !important;
             }
 
-            .payment-title-td p {
-                font-size: 14px !important;
-                line-height: 16px !important;
-                margin-bottom: 8px !important;
-            }
-
             .payment-tablet__body p {
                 font-size: 12px !important;
                 line-height: 14px !important;
@@ -148,7 +147,6 @@
             .header-td,
             .invoice-td,
             .payment-history-td,
-            .payment-title-td,
             .payment-tablet-td,
             .customer-td {
                 background-color: #ffffff !important;
@@ -192,13 +190,13 @@
                         <td bgcolor="#ffffff" class="header-td">
                             <table class="tablet-520" cellpadding="0" cellspacing="0" width="520" align="center">
                                 <tr>
-                                    <!-- Invoice -->
                                     <td bgcolor="#ffffff" align="left" class="header-td__element">
                                         <span style="
                           font-family: Arial, Helvetica, sans-serif, 'Roboto';
                           font-size: 12px;
                           color: #8fadbf;
                           line-height: 14px;
+                          padding-bottom: 5px;
                           -webkit-text-size-adjust: none;
                         ">
                                             von
@@ -209,9 +207,10 @@
                           line-height: 18px;
                           color: #003351;
                           font-weight: 700;
+                          margin-bottom: 15px;
                           -webkit-text-size-adjust: none;
                         ">
-                                            TestCompany777
+                                            <%- companyName %>
                                         </p>
                                     </td>
                                     <td bgcolor="#ffffff" align="right" class="header-td__element">
@@ -221,6 +220,7 @@
                             font-size: 12px;
                             color: #8fadbf;
                             line-height: 14px;
+                            padding-bottom: 5px;
                           ">
                                                 Bestellnummer
                                             </span>
@@ -230,13 +230,13 @@
                             line-height: 18px;
                             color: #003351;
                             font-weight: 700;
+                            margin-bottom: 15px;
                             -webkit-text-size-adjust: none;
                           ">
-                                                H7MTQPLE
+                                                <%= uid %>
                                             </p>
                                         </div>
                                     </td>
-                                    <!-- Invoice end-->
                                 </tr>
                             </table>
                         </td>
@@ -251,7 +251,7 @@
                                         <table class="tablet-520" cellpadding="0" cellspacing="0" width="520"
                                             align="left">
                                             <tr>
-                                                <td bgcolor="#ffffff" style="                          padding-bottom: 10px;
+                                                <td bgcolor="#ffffff" style="padding-bottom: 30px;
                         ">
                                                     <p class="invoice-td__title" style="
                                 font-family: Arial, Helvetica, sans-serif,
@@ -259,12 +259,34 @@
                                 font-size: 18px;
                                 color: #003351;
                                 font-weight: 700;
+                                padding-top: 20px;
+                                padding-bottom: 10px;
                                 line-height: 21px;
                                 -webkit-text-size-adjust: none;
                               ">
-                                                        We would like to remind you:
+                                                        Mahnung
                                                     </p>
-                                                    <p class="invoice-td__text" style="
+                                                    <p style="
+                                                        font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                        font-size: 16px;
+                                                        color: #003351;
+                                                        font-weight: 400;
+                                                        padding-bottom: 5px;
+                                                        line-height: 18px;
+                                                    ">
+                                                        <span>
+                                                            <%= greeting %>
+                                                        </span>
+                                                        <span>
+                                                            <%- billingAddress.title ? `${billingAddress.title}` : '' %>
+                                                        </span>
+                                                        <span>
+                                                            <%- greeting==='Hallo' ? `${billingAddress.firstName}
+                                                                ${billingAddress.lastName}` : billingAddress.lastName %>
+                                                        </span>
+                                                    </p>
+                                                    <% if (firstEmail' ) { %>
+                                                        <p class="invoice-td__text" style="
                                 font-family: Arial, Helvetica, sans-serif,
                                   'Roboto';
                                 font-size: 14px;
@@ -273,14 +295,55 @@
                                 font-weight: 400;
                                 -webkit-text-size-adjust: none;
                               ">
-                                                        This is a reminder about those that you have non-payment of the
-                                                        open account <b style="color: #003351">#DK-2002-07</b>, the term
-                                                        for which payment is due on <b style="color: #003351">15 Sep
-                                                            2023</b> amount <b style="color: #003351">100,00 EUR</b>.
-                                                    </p>
-                                                    <% if (paymentMethod==='bank_transfer' ) { %>
-                                                        <div>
+
+                                                            für die Rechnung <b style="color: #003351">invoice
+                                                                number</b>
+                                                            vom <b style="color: #003351">invoice date</b> über <b
+                                                                style="color: #003351">invoice gross amount</b>, fällig
+                                                            zum
+                                                            <b style="color: #003351">invoice due date</b>, konnten wir
+                                                            bis
+                                                            heute keinen Zahlungseingang feststellen. Wir bitten Sie
+                                                            deshalb, die Rechnung innerhalb der nächsten 10 Tage
+                                                            auszugleichen.
+
+                                                        </p>
+                                                        <%} else { %>
                                                             <p class="invoice-td__text" style="
+                                                    font-family: Arial, Helvetica, sans-serif,
+                                                      'Roboto';
+                                                    font-size: 14px;
+                                                    color: #8fadbf;
+                                                    line-height: 18px;
+                                                    font-weight: 400;
+                                                    -webkit-text-size-adjust: none;
+                                                  ">
+                                                                für die Rechnung <b style="color: #003351">invoice
+                                                                    number</b>
+                                                                vom <b style="color: #003351">invoice date</b> über <b
+                                                                    style="color: #003351">invoice gross amount</b>,
+                                                                fällig zum
+                                                                <b style="color: #003351">invoice due date</b>, konnten
+                                                                wir bis
+                                                                heute keinen Zahlungseingang feststellen. Nachdem unsere
+                                                                Zahlungserinnerungen nicht zum Forderungsausgleich
+                                                                führten,
+                                                                bitten wir Sie hiermit, die Rechnung innerhalb von 7
+                                                                Tagen nach
+                                                                Datum dieses Schreibens zu begleichen. Andernfalls
+                                                                werden wir
+                                                                die Angelegenheit unseren Anwälten übergeben. Bei einer
+                                                                Ratenzahlung wird diese hiermit gekündigt und somit die
+                                                                Summe
+                                                                komplett fällig.
+                                                            </p>
+                                                            <% } %>
+                                                                <% if (paymentMethod==='bank_transfer' ) { %>
+                                                                    <div style="
+                                                        padding-top: 10px;
+                                                        padding-bottom: 10px;
+                                                      ">
+                                                                        <p class="invoice-td__text" style="
                           font-family: Arial, Helvetica, sans-serif,
                             'Roboto';
                           font-size: 14px;
@@ -289,108 +352,172 @@
                           font-weight: 400;
                           -webkit-text-size-adjust: none;
                         ">
-                                                                Please send the money within 7 days to this bank
-                                                                account:
-                                                            </p>
-                                                            <table table class="tablet-520" cellpadding="0"
-                                                                cellspacing="0" width="520">
-                                                                <td bgcolor="#ffffff">
-                                                                    <table>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <span class="grey-14" style="
+                                                                            Bitte begleichen Sie den Betrag via
+                                                                            Überweisung auf
+                                                                            folgendes Konto:
+                                                                        </p>
+                                                                        <table table class="tablet-520" cellpadding="0"
+                                                                            cellspacing="0" width="520">
+                                                                            <td bgcolor="#ffffff">
+                                                                                <table>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <span class="grey-14" style="
                                                                                     font-family: Arial, Helvetica, sans-serif,
                                                                                         'Roboto';
                                                                                     font-size: 12px;
                                                                                     color: #8fadbf;
                                                                                 ">IBAN:</span>
-                                                                                <span style="
+                                                                                            <span style="
                                                                                     font-family: Arial, Helvetica, sans-serif,
                                                                                         'Roboto';
                                                                                     font-size: 12px;
                                                                                     color: #003351;
                                                                                     line-height: 20px;
                                                                                 ">
-                                                                                    <%- `${bankDetails['IBAN']}` %>
-                                                                                </span>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <span class="grey-14" style="
+                                                                                                <%- `${bankDetails['IBAN']}`
+                                                                                                    %>
+                                                                                            </span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <span class="grey-14" style="
                                                                                     font-family: Arial, Helvetica, sans-serif,
                                                                                         'Roboto';
                                                                                     font-size: 12px;
                                                                                     color: #8fadbf;
                                                                                 ">BIC:</span>
-                                                                                <span style="
+                                                                                            <span style="
                                                                                     font-family: Arial, Helvetica, sans-serif,
                                                                                         'Roboto';
                                                                                     font-size: 12px;
                                                                                     color: #003351;
                                                                                     line-height: 20px;
                                                                                 ">
-                                                                                    <%- `${bankDetails['BIC']}` %>
-                                                                                </span>
+                                                                                                <%- `${bankDetails['BIC']}`
+                                                                                                    %>
+                                                                                            </span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
                                                                             </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                                <td bgcolor="#ffffff">
-                                                                    <table>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <span class="grey-14" style="
+                                                                            <td bgcolor="#ffffff">
+                                                                                <table>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <span class="grey-14" style="
                                                                                     font-family: Arial, Helvetica, sans-serif,
                                                                                         'Roboto';
                                                                                     font-size: 12px;
                                                                                     color: #8fadbf;
                                                                                 ">Kontoinhaber:</span>
-                                                                                <span style="
+                                                                                            <span style="
                                                                                     font-family: Arial, Helvetica, sans-serif,
                                                                                         'Roboto';
                                                                                     font-size: 12px;
                                                                                     color: #003351;
                                                                                     line-height: 20px;
                                                                                 ">
-                                                                                    <%- `${bankDetails['account_holder_name']}`
-                                                                                        %>
-                                                                                </span>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <span class="grey-14" style="
+                                                                                                <%- `${bankDetails['account_holder_name']}`
+                                                                                                    %>
+                                                                                            </span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <span class="grey-14" style="
                                                                                     font-family: Arial, Helvetica, sans-serif,
                                                                                         'Roboto';
                                                                                     font-size: 12px;
                                                                                     color: #8fadbf;
-                                                                                "><%- factoring ? `` :
-                                                                                        `Verwendungszweck:` %>
-                                                                                </span>
-                                                                                <span style="
+                                                                                ">Verwendungszweck:
+                                                                                            </span>
+                                                                                            <span style="
                                                                                     font-family: Arial, Helvetica, sans-serif,
                                                                                         'Roboto';
                                                                                     font-size: 12px;
                                                                                     color: #003351;
                                                                                     line-height: 20px;
                                                                                 ">
-                                                                                    <%- `${bankDetails['reference']}` %>
-                                                                                </span>
+                                                                                                <%- `${bankDetails['reference']}`
+                                                                                                    %>
+                                                                                            </span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
                                                                             </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </table>
-                                                        </div>
-                                                        <% } %>
-                                                            <% if (paymentMethod==='card' ||
-                                                                paymentMethod==='sepa_debit' ) { %>
-                                                                <p>
-                                                                    Click here to pay now via 
-                                                                </p>
-                                                                <% } %>
-                                                               <a href="<%- 'https://qa-2-16.salespower.io/order/`${orderId}`' %>">Or use a different payment method</a>
+                                                                        </table>
+                                                                    </div>
+                                                                    <% } %>
+                                                                        <% if (paymentMethod==='card' ||
+                                                                            paymentMethod==='sepa_debit' ||
+                                                                            paymentMethod==='amex ' ) { %>
+                                                                            <p class="invoice-td__text" style="
+                                                                    font-family: Arial, Helvetica, sans-serif,
+                                                                      'Roboto';
+                                                                    font-size: 14px;
+                                                                    color: #8fadbf;
+                                                                    line-height: 18px;
+                                                                    font-weight: 400;
+                                                                    -webkit-text-size-adjust: none;
+                                                                  ">
+                                                                                Bitte setzen Sie sich mit uns in
+                                                                                Verbindung, um eine
+                                                                                erneute Abbuchung vorzunehmen.
+                                                                            </p>
+                                                                            <% } %>
+
+                                                                                <p class="invoice-td__text" style="
+                                                                    font-family: Arial, Helvetica, sans-serif,
+                                                                      'Roboto';
+                                                                    font-size: 14px;
+                                                                    color: #8fadbf;
+                                                                    line-height: 18px;
+                                                                    font-weight: 400;
+                                                                    padding-top: 20px;
+                                                                    padding-bottom: 10px;
+                                                                    -webkit-text-size-adjust: none;
+                                                                  ">
+                                                                                    Mit freundlichen Grüßen
+                                                                                    <span style="display: block;
+                                                                    color: #003351;
+                                                                  "> <%- companyName %></span>
+                                                                                </p>
+                                                                                <a href="https://qa-2-16.salespower.io/order/FGD28824"
+                                                                                    style="
+                                                    font-family: Arial, Helvetica, sans-serif,
+                                                      'Roboto';
+                                                    font-size: 14px;
+                                                    color: #103ef7;
+                                                    line-height: 18px;
+                                                    font-weight: 400;
+                                                    -webkit-text-size-adjust: none;">Or use a
+                                                                                    different payment method</a>
+
+                                                                                <!-- <p style="
+                                                    font-family: Arial, Helvetica, sans-serif,
+                                                      'Roboto';
+                                                    font-size: 14px;
+                                                    color: #8fadbf;
+                                                    line-height: 18px;
+                                                    font-weight: 400;
+                                                    -webkit-text-size-adjust: none;
+                                                  ">
+                                                        Click here to pay now via <a
+                                                            href="https://qa-2-16.salespower.io/order/FGD28824" style="
+                                                    font-family: Arial, Helvetica, sans-serif,
+                                                      'Roboto';
+                                                    font-size: 14px;
+                                                    color: #103ef7;
+                                                    line-height: 18px;
+                                                    font-weight: 400;
+                                                    text-decoration: none;
+                                                    -webkit-text-size-adjust: none;">
+                                                            **** **** **** 4242</a>
+                                                    </p>
+                                                     -->
+                                                </td>
                                             </tr>
                                         </table>
                                     </td>
@@ -425,20 +552,20 @@
                                 line-height: 18px;
                                 color: #003351;
                                 font-weight: 400;
-                                margin-top: 0;
-                                margin-bottom: 5px;
+                                padding-bottom: 5px;
                                 -webkit-text-size-adjust: none;
                               ">
                                                         Bei Fragen zu dieser Rechnung, bitte kontaktieren
                                                         Sie diese E-Mail-Adresse
                                                     </p>
-                                                    <a style="
-                                font-family: Arial, Helvetica, sans-serif,
-                                  'Roboto';
-                                font-size: 16px;
-                                color: #293fe6;
-                                line-height: 18px;
-                              " href="mailto:reebok@gmail.com">reebok@gmail.com</a>
+                                                    <p style="
+                                                                font-family: Arial, Helvetica, sans-serif, 'Roboto';
+                                                                font-size: 16px;
+                                                                color: #293fe6;
+                                                                line-height: 18px;
+                                                            ">
+                                                        <%= email %>
+                                                    </p>
                                                 </td>
                                             </tr>
                                         </table>
@@ -478,7 +605,7 @@
                               color: #8fadbf;
                               line-height: 16px;
                             ">
-                                                        <%- agreements %>
+                                                        <%- agreements.imprint %>
                                                     </div>
                                                 </td>
                                             </tr>
